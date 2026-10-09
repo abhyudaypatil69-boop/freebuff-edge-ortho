@@ -1,0 +1,2803 @@
+[
+ {
+  "source_id": "DJI_0018",
+  "target_id": "DJI_0019",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    0.987893132437927,
+    -0.06222240053692985,
+    -4.204421876945924
+   ],
+   [
+    0.0630729989186685,
+    1.0000067513223754,
+    193.21933272006464
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 40,
+  "inliers": 24,
+  "inlier_ratio": 0.6,
+  "reprojection_error_px": 1.3133809407697998,
+  "reprojection_error_m": 0.023522652649187112,
+  "scale": 0.9959222977388447,
+  "rotation_deg": 3.6531464304270576,
+  "match_ms": 14.336800002638483,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0018",
+  "target_id": "DJI_0020",
+  "model": "affine",
+  "status": "insufficient_matches",
+  "matrix": null,
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 7,
+  "inliers": 0,
+  "inlier_ratio": null,
+  "reprojection_error_px": null,
+  "reprojection_error_m": null,
+  "scale": null,
+  "rotation_deg": null,
+  "match_ms": 0.0,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0018",
+  "target_id": "DJI_0027",
+  "model": "affine",
+  "status": "rejected_by_ransac",
+  "matrix": null,
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 18,
+  "inliers": 6,
+  "inlier_ratio": 0.3333333333333333,
+  "reprojection_error_px": null,
+  "reprojection_error_m": null,
+  "scale": null,
+  "rotation_deg": null,
+  "match_ms": 0.5605000005743932,
+  "error": "6 inliers below minimum 12"
+ },
+ {
+  "source_id": "DJI_0018",
+  "target_id": "DJI_0028",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    0.9669555716173223,
+    0.08401207864242008,
+    -426.6985290929186
+   ],
+   [
+    -0.07786649693740817,
+    0.9834245319676255,
+    224.81366237839669
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 31,
+  "inliers": 14,
+  "inlier_ratio": 0.45161290322580644,
+  "reprojection_error_px": 1.0512663435532044,
+  "reprojection_error_m": 0.01882818021303789,
+  "scale": 0.9785503661834665,
+  "rotation_deg": -4.603950269946664,
+  "match_ms": 0.267100000201026,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0018",
+  "target_id": "DJI_0029",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    0.9751005691215406,
+    0.10521828984577078,
+    -456.59586120416253
+   ],
+   [
+    -0.11788406311109836,
+    0.9727592932579493,
+    57.04501581023475
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 64,
+  "inliers": 43,
+  "inlier_ratio": 0.671875,
+  "reprojection_error_px": 1.085860359090873,
+  "reprojection_error_m": 0.019447759031317537,
+  "scale": 0.9803185482192176,
+  "rotation_deg": -6.893278116857537,
+  "match_ms": 0.32730000020819716,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0018",
+  "target_id": "DJI_0030",
+  "model": "affine",
+  "status": "insufficient_matches",
+  "matrix": null,
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 12,
+  "inliers": 0,
+  "inlier_ratio": null,
+  "reprojection_error_px": null,
+  "reprojection_error_m": null,
+  "scale": null,
+  "rotation_deg": null,
+  "match_ms": 0.0,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0018",
+  "target_id": "DJI_0031",
+  "model": "affine",
+  "status": "insufficient_matches",
+  "matrix": null,
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 15,
+  "inliers": 0,
+  "inlier_ratio": null,
+  "reprojection_error_px": null,
+  "reprojection_error_m": null,
+  "scale": null,
+  "rotation_deg": null,
+  "match_ms": 0.0,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0019",
+  "target_id": "DJI_0020",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.005667248195905,
+    0.035329033243609205,
+    -24.79976669178073
+   ],
+   [
+    -0.058684274465913136,
+    1.014550689237312,
+    249.73988184184392
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 27,
+  "inliers": 15,
+  "inlier_ratio": 0.5555555555555556,
+  "reprojection_error_px": 0.9135487342435915,
+  "reprojection_error_m": 0.01648498690942561,
+  "scale": 1.0112670542595208,
+  "rotation_deg": -3.3396261030633485,
+  "match_ms": 0.3679999972518999,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0019",
+  "target_id": "DJI_0021",
+  "model": "affine",
+  "status": "insufficient_matches",
+  "matrix": null,
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 17,
+  "inliers": 0,
+  "inlier_ratio": null,
+  "reprojection_error_px": null,
+  "reprojection_error_m": null,
+  "scale": null,
+  "rotation_deg": null,
+  "match_ms": 0.0,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0019",
+  "target_id": "DJI_0026",
+  "model": "affine",
+  "status": "insufficient_matches",
+  "matrix": null,
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 16,
+  "inliers": 0,
+  "inlier_ratio": null,
+  "reprojection_error_px": null,
+  "reprojection_error_m": null,
+  "scale": null,
+  "rotation_deg": null,
+  "match_ms": 0.0,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0019",
+  "target_id": "DJI_0027",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    0.9515218317715763,
+    0.1974334732759671,
+    -433.981660812304
+   ],
+   [
+    -0.22111201275792564,
+    0.9872908155364828,
+    313.5250240805877
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 37,
+  "inliers": 23,
+  "inlier_ratio": 0.6216216216216216,
+  "reprojection_error_px": 1.3494511234829811,
+  "reprojection_error_m": 0.024350845523250397,
+  "scale": 0.9917683936742347,
+  "rotation_deg": -13.082059445841107,
+  "match_ms": 0.3355000008014031,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0019",
+  "target_id": "DJI_0028",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    0.9570770117792226,
+    0.15345928643820933,
+    -444.402255049735
+   ],
+   [
+    -0.14516894419001147,
+    0.9735900405642732,
+    40.69093829118223
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 66,
+  "inliers": 39,
+  "inlier_ratio": 0.5909090909090909,
+  "reprojection_error_px": 1.4697137951371513,
+  "reprojection_error_m": 0.026520985433249898,
+  "scale": 0.976827639550691,
+  "rotation_deg": -8.624852035510337,
+  "match_ms": 0.2930000009655487,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0019",
+  "target_id": "DJI_0029",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.005764010348922,
+    0.14794579132934543,
+    -503.2181866332498
+   ],
+   [
+    -0.22898174542313646,
+    1.033668672127403,
+    -121.58782731088147
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 34,
+  "inliers": 17,
+  "inlier_ratio": 0.5,
+  "reprojection_error_px": 1.3141866999980574,
+  "reprojection_error_m": 0.023714499001464946,
+  "scale": 1.0376571839691915,
+  "rotation_deg": -12.825878662400255,
+  "match_ms": 0.32560000181547366,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0019",
+  "target_id": "DJI_0030",
+  "model": "affine",
+  "status": "insufficient_matches",
+  "matrix": null,
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 14,
+  "inliers": 0,
+  "inlier_ratio": null,
+  "reprojection_error_px": null,
+  "reprojection_error_m": null,
+  "scale": null,
+  "rotation_deg": null,
+  "match_ms": 0.0,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0019",
+  "target_id": "DJI_0031",
+  "model": "affine",
+  "status": "rejected_by_ransac",
+  "matrix": null,
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 23,
+  "inliers": 5,
+  "inlier_ratio": 0.21739130434782608,
+  "reprojection_error_px": null,
+  "reprojection_error_m": null,
+  "scale": null,
+  "rotation_deg": null,
+  "match_ms": 0.8908000017981976,
+  "error": "5 inliers below minimum 12"
+ },
+ {
+  "source_id": "DJI_0019",
+  "target_id": "DJI_0032",
+  "model": "affine",
+  "status": "insufficient_matches",
+  "matrix": null,
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 14,
+  "inliers": 0,
+  "inlier_ratio": null,
+  "reprojection_error_px": null,
+  "reprojection_error_m": null,
+  "scale": null,
+  "rotation_deg": null,
+  "match_ms": 0.0,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0020",
+  "target_id": "DJI_0021",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.005077465105012,
+    0.020537094988247944,
+    -12.031937361319693
+   ],
+   [
+    -0.03483264978449582,
+    1.0136328602954805,
+    234.6317340282362
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 84,
+  "inliers": 70,
+  "inlier_ratio": 0.8333333333333334,
+  "reprojection_error_px": 1.1178083072124967,
+  "reprojection_error_m": 0.020170850903649507,
+  "scale": 1.0097592226037162,
+  "rotation_deg": -1.984887174151795,
+  "match_ms": 1.2094999983673915,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0020",
+  "target_id": "DJI_0022",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0051893654429527,
+    0.020615755293278325,
+    -21.196806016168743
+   ],
+   [
+    -0.023450955860207418,
+    1.0665502410337604,
+    428.878171287208
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 29,
+  "inliers": 20,
+  "inlier_ratio": 0.6896551724137931,
+  "reprojection_error_px": 1.220671234169989,
+  "reprojection_error_m": 0.022027012420597455,
+  "scale": 1.036104388330187,
+  "rotation_deg": -1.3364617137548753,
+  "match_ms": 0.30390000029001385,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0020",
+  "target_id": "DJI_0025",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0160956840500326,
+    0.13847761147123566,
+    -464.20743080158854
+   ],
+   [
+    -0.18596217141876506,
+    1.0006267824316268,
+    512.0372437833366
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 46,
+  "inliers": 36,
+  "inlier_ratio": 0.782608695652174,
+  "reprojection_error_px": 1.0394255832273465,
+  "reprojection_error_m": 0.018756434649337468,
+  "scale": 1.0216243224712311,
+  "rotation_deg": -10.371288231965119,
+  "match_ms": 0.3805999986070674,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0020",
+  "target_id": "DJI_0026",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0119766174814406,
+    0.16253104358306122,
+    -476.238674659234
+   ],
+   [
+    -0.17874463617488057,
+    0.99654126540262,
+    290.3172489097509
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 59,
+  "inliers": 46,
+  "inlier_ratio": 0.7796610169491526,
+  "reprojection_error_px": 1.119895108202551,
+  "reprojection_error_m": 0.020208507227515035,
+  "scale": 1.0186950031439717,
+  "rotation_deg": -10.016793751611543,
+  "match_ms": 0.29859999995096587,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0020",
+  "target_id": "DJI_0027",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0126486329206141,
+    0.16503098676739508,
+    -497.1328425562615
+   ],
+   [
+    -0.15571777459532093,
+    0.9812647619493253,
+    58.48704701728267
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 41,
+  "inliers": 30,
+  "inlier_ratio": 0.7317073170731707,
+  "reprojection_error_px": 1.1901837199068357,
+  "reprojection_error_m": 0.02147686522571885,
+  "scale": 1.0097757334500068,
+  "rotation_deg": -8.742054255586725,
+  "match_ms": 0.2167999991797842,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0020",
+  "target_id": "DJI_0028",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0183512823298686,
+    0.10767539689933012,
+    -491.87213519196223
+   ],
+   [
+    -0.1143455332336321,
+    0.976245579033254,
+    -188.0659815415198
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 32,
+  "inliers": 14,
+  "inlier_ratio": 0.4375,
+  "reprojection_error_px": 0.8531930446726484,
+  "reprojection_error_m": 0.015395868491117943,
+  "scale": 1.003473640476745,
+  "rotation_deg": -6.406619555467454,
+  "match_ms": 0.4591000033542514,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0020",
+  "target_id": "DJI_0029",
+  "model": "affine",
+  "status": "insufficient_matches",
+  "matrix": null,
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 15,
+  "inliers": 0,
+  "inlier_ratio": null,
+  "reprojection_error_px": null,
+  "reprojection_error_m": null,
+  "scale": null,
+  "rotation_deg": null,
+  "match_ms": 0.0,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0020",
+  "target_id": "DJI_0031",
+  "model": "affine",
+  "status": "insufficient_matches",
+  "matrix": null,
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 7,
+  "inliers": 0,
+  "inlier_ratio": null,
+  "reprojection_error_px": null,
+  "reprojection_error_m": null,
+  "scale": null,
+  "rotation_deg": null,
+  "match_ms": 0.0,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0020",
+  "target_id": "DJI_0032",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    0.9777170200769149,
+    -0.11024554042154089,
+    -727.527138063688
+   ],
+   [
+    0.07316849317890653,
+    0.9708449417318419,
+    -124.05143963184662
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 25,
+  "inliers": 16,
+  "inlier_ratio": 0.64,
+  "reprojection_error_px": 0.9995742736011577,
+  "reprojection_error_m": 0.018037317767132893,
+  "scale": 0.9787555832265542,
+  "rotation_deg": 4.279812894954954,
+  "match_ms": 0.3085999996983446,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0020",
+  "target_id": "DJI_0033",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0497492372229866,
+    -0.0830214133837024,
+    -829.8119218092978
+   ],
+   [
+    0.01936832137866359,
+    0.9947410391217529,
+    134.73942107820278
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 37,
+  "inliers": 26,
+  "inlier_ratio": 0.7027027027027027,
+  "reprojection_error_px": 0.9061690441849927,
+  "reprojection_error_m": 0.016351820402318196,
+  "scale": 1.0239783258229127,
+  "rotation_deg": 1.0570116502987161,
+  "match_ms": 0.2530999990995042,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0021",
+  "target_id": "DJI_0022",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.017641855759811,
+    0.00040985343892833656,
+    -26.503255686394446
+   ],
+   [
+    -0.014457394999741219,
+    1.0121562956493841,
+    221.7348181176305
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 38,
+  "inliers": 23,
+  "inlier_ratio": 0.6052631578947368,
+  "reprojection_error_px": 1.2575699890767682,
+  "reprojection_error_m": 0.022692850452890285,
+  "scale": 1.0149507408192977,
+  "rotation_deg": -0.8139327104659224,
+  "match_ms": 0.35010000283364207,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0021",
+  "target_id": "DJI_0023",
+  "model": "affine",
+  "status": "insufficient_matches",
+  "matrix": null,
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 12,
+  "inliers": 0,
+  "inlier_ratio": null,
+  "reprojection_error_px": null,
+  "reprojection_error_m": null,
+  "scale": null,
+  "rotation_deg": null,
+  "match_ms": 0.0,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0021",
+  "target_id": "DJI_0024",
+  "model": "affine",
+  "status": "rejected_by_ransac",
+  "matrix": null,
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 20,
+  "inliers": 8,
+  "inlier_ratio": 0.4,
+  "reprojection_error_px": null,
+  "reprojection_error_m": null,
+  "scale": null,
+  "rotation_deg": null,
+  "match_ms": 0.28780000138795003,
+  "error": "8 inliers below minimum 12"
+ },
+ {
+  "source_id": "DJI_0021",
+  "target_id": "DJI_0025",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0122025043753238,
+    0.12032562971562336,
+    -478.1725233079013
+   ],
+   [
+    -0.15411798707853785,
+    0.9952733364290511,
+    279.5317647071765
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 71,
+  "inliers": 66,
+  "inlier_ratio": 0.9295774647887324,
+  "reprojection_error_px": 1.0631987517729788,
+  "reprojection_error_m": 0.019185421475743404,
+  "scale": 1.013232250723842,
+  "rotation_deg": -8.657364382046307,
+  "match_ms": 0.3040999981749337,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0021",
+  "target_id": "DJI_0026",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0131379705389654,
+    0.1429544385720204,
+    -499.3719344880449
+   ],
+   [
+    -0.14222962695961072,
+    0.985532773781815,
+    56.058796938454854
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 65,
+  "inliers": 58,
+  "inlier_ratio": 0.8923076923076924,
+  "reprojection_error_px": 1.0985193636625623,
+  "reprojection_error_m": 0.01982278191729094,
+  "scale": 1.0094583722892412,
+  "rotation_deg": -7.991258111463759,
+  "match_ms": 0.23670000155107118,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0021",
+  "target_id": "DJI_0027",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0223801010245421,
+    0.13093406969535307,
+    -521.2961613543438
+   ],
+   [
+    -0.11807430550892889,
+    0.9738018187800797,
+    -174.28858436509665
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 27,
+  "inliers": 16,
+  "inlier_ratio": 0.5925925925925926,
+  "reprojection_error_px": 0.7411982487263555,
+  "reprojection_error_m": 0.013374922398267087,
+  "scale": 1.005832116613405,
+  "rotation_deg": -6.587882751840638,
+  "match_ms": 0.3906999991158955,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0021",
+  "target_id": "DJI_0028",
+  "model": "affine",
+  "status": "insufficient_matches",
+  "matrix": null,
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 14,
+  "inliers": 0,
+  "inlier_ratio": null,
+  "reprojection_error_px": null,
+  "reprojection_error_m": null,
+  "scale": null,
+  "rotation_deg": null,
+  "match_ms": 0.0,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0021",
+  "target_id": "DJI_0032",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0288405796600086,
+    -0.09134237865204875,
+    -756.7776958175356
+   ],
+   [
+    0.0960948423813782,
+    0.9632729243129738,
+    -339.5622651324136
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 29,
+  "inliers": 15,
+  "inlier_ratio": 0.5172413793103449,
+  "reprojection_error_px": 1.1777555520928156,
+  "reprojection_error_m": 0.02125259893751486,
+  "scale": 1.0004707998743159,
+  "rotation_deg": 5.336008099101973,
+  "match_ms": 0.34560000131023116,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0021",
+  "target_id": "DJI_0033",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0249931229664466,
+    -0.07722861025057078,
+    -786.6017615232171
+   ],
+   [
+    0.055479222740480144,
+    0.9781627787251147,
+    -95.66636017266238
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 39,
+  "inliers": 28,
+  "inlier_ratio": 0.717948717948718,
+  "reprojection_error_px": 1.0783787978995498,
+  "reprojection_error_m": 0.019459345408097378,
+  "scale": 1.0038166319723112,
+  "rotation_deg": 3.0981930331157317,
+  "match_ms": 0.26840000282390974,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0021",
+  "target_id": "DJI_0034",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0353634931589255,
+    -0.03633071872547059,
+    -823.6671398013829
+   ],
+   [
+    0.007108204257627952,
+    0.9948396152595855,
+    167.22884833522505
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 44,
+  "inliers": 34,
+  "inlier_ratio": 0.7727272727272727,
+  "reprojection_error_px": 1.3870369292966074,
+  "reprojection_error_m": 0.025029081389157284,
+  "scale": 1.0154328627614855,
+  "rotation_deg": 0.3933533565722869,
+  "match_ms": 0.2061000013782177,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0022",
+  "target_id": "DJI_0023",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0207545944620773,
+    -0.034255837760245114,
+    -22.209964142849312
+   ],
+   [
+    0.0009536267751812175,
+    1.0368092115188727,
+    217.721099809962
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 55,
+  "inliers": 36,
+  "inlier_ratio": 0.6545454545454545,
+  "reprojection_error_px": 1.1190704356605679,
+  "reprojection_error_m": 0.02014326784189022,
+  "scale": 1.029069442115524,
+  "rotation_deg": 0.05352782524690175,
+  "match_ms": 0.31569999919156544,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0022",
+  "target_id": "DJI_0024",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.023869546250591,
+    -0.10956253875138963,
+    -451.6034234194913
+   ],
+   [
+    0.057355864582159945,
+    1.027848652538146,
+    105.9633478576429
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 40,
+  "inliers": 29,
+  "inlier_ratio": 0.725,
+  "reprojection_error_px": 0.895508142164074,
+  "reprojection_error_m": 0.016119146558953332,
+  "scale": 1.0295813007383545,
+  "rotation_deg": 3.2062853297604623,
+  "match_ms": 0.32699999792384915,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0022",
+  "target_id": "DJI_0025",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0108525670021806,
+    0.11747384843716906,
+    -490.99439308556407
+   ],
+   [
+    -0.11266982084341007,
+    0.9843753523898806,
+    33.52025780184559
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 67,
+  "inliers": 51,
+  "inlier_ratio": 0.7611940298507462,
+  "reprojection_error_px": 1.3952180856569278,
+  "reprojection_error_m": 0.0251139255418247,
+  "scale": 1.0042290054462373,
+  "rotation_deg": -6.359947916826148,
+  "match_ms": 0.37650000012945384,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0022",
+  "target_id": "DJI_0026",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    0.9760837333463154,
+    0.1334253354470985,
+    -478.700755062253
+   ],
+   [
+    -0.11094890636617157,
+    0.9588771273491752,
+    -170.21667202921813
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 28,
+  "inliers": 17,
+  "inlier_ratio": 0.6071428571428571,
+  "reprojection_error_px": 0.9316139596784374,
+  "reprojection_error_m": 0.016769051274211872,
+  "scale": 0.9752176806032514,
+  "rotation_deg": -6.484829629334526,
+  "match_ms": 0.2576000006229151,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0022",
+  "target_id": "DJI_0027",
+  "model": "affine",
+  "status": "insufficient_matches",
+  "matrix": null,
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 15,
+  "inliers": 0,
+  "inlier_ratio": null,
+  "reprojection_error_px": null,
+  "reprojection_error_m": null,
+  "scale": null,
+  "rotation_deg": null,
+  "match_ms": 0.0,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0022",
+  "target_id": "DJI_0033",
+  "model": "affine",
+  "status": "insufficient_matches",
+  "matrix": null,
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 17,
+  "inliers": 0,
+  "inlier_ratio": null,
+  "reprojection_error_px": null,
+  "reprojection_error_m": null,
+  "scale": null,
+  "rotation_deg": null,
+  "match_ms": 0.0,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0022",
+  "target_id": "DJI_0034",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0124632494429062,
+    -0.032904898643225836,
+    -785.8129494729358
+   ],
+   [
+    0.030035741079537274,
+    0.983171970199469,
+    -59.10039284151785
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 43,
+  "inliers": 32,
+  "inlier_ratio": 0.7441860465116279,
+  "reprojection_error_px": 1.0732993855283282,
+  "reprojection_error_m": 0.019319388939509904,
+  "scale": 0.9983142335198656,
+  "rotation_deg": 1.6992385856501597,
+  "match_ms": 0.38919999860809185,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0022",
+  "target_id": "DJI_0035",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0448712610388557,
+    -0.041601266230166654,
+    -828.2963783851444
+   ],
+   [
+    -0.03246875388430939,
+    1.0050438559519685,
+    212.38056035435204
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 37,
+  "inliers": 28,
+  "inlier_ratio": 0.7567567567567568,
+  "reprojection_error_px": 1.3251561292045477,
+  "reprojection_error_m": 0.02385281032568186,
+  "scale": 1.0256336442559895,
+  "rotation_deg": -1.7798595790879372,
+  "match_ms": 0.31179999859887175,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0023",
+  "target_id": "DJI_0024",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0072534938148139,
+    -0.07327460900351494,
+    -417.3264624013511
+   ],
+   [
+    0.045762723193671195,
+    0.9916709172354936,
+    -99.73372770439171
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 67,
+  "inliers": 53,
+  "inlier_ratio": 0.7910447761194029,
+  "reprojection_error_px": 1.3273681961032864,
+  "reprojection_error_m": 0.023892627529859153,
+  "scale": 1.0013207462635085,
+  "rotation_deg": 2.601340228893721,
+  "match_ms": 0.3727000002982095,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0023",
+  "target_id": "DJI_0025",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    0.9990414418091411,
+    0.13053219340691868,
+    -501.97337655717973
+   ],
+   [
+    -0.1330342066000237,
+    0.9687133442944738,
+    -165.43229715374636
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 46,
+  "inliers": 33,
+  "inlier_ratio": 0.717391304347826,
+  "reprojection_error_px": 1.277722144183645,
+  "reprojection_error_m": 0.02299899859530561,
+  "scale": 0.9926691902100973,
+  "rotation_deg": -7.584989499998386,
+  "match_ms": 0.24280000070575625,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0023",
+  "target_id": "DJI_0026",
+  "model": "affine",
+  "status": "insufficient_matches",
+  "matrix": null,
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 11,
+  "inliers": 0,
+  "inlier_ratio": null,
+  "reprojection_error_px": null,
+  "reprojection_error_m": null,
+  "scale": null,
+  "rotation_deg": null,
+  "match_ms": 0.0,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0023",
+  "target_id": "DJI_0034",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0089041230257645,
+    -0.05452054205209026,
+    -753.4922850813554
+   ],
+   [
+    -0.0003900787242322217,
+    0.9641158258174317,
+    -244.91911959227318
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 35,
+  "inliers": 23,
+  "inlier_ratio": 0.6571428571428571,
+  "reprojection_error_px": 1.106941441511688,
+  "reprojection_error_m": 0.019924945947210383,
+  "scale": 0.9872460408438652,
+  "rotation_deg": -0.022152613863496335,
+  "match_ms": 0.3249000001233071,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0023",
+  "target_id": "DJI_0035",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    0.9869054179515858,
+    0.0009473474049343774,
+    -773.0123304416451
+   ],
+   [
+    -0.019539536739980223,
+    0.9746723752178078,
+    -15.097262616893126
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 53,
+  "inliers": 30,
+  "inlier_ratio": 0.5660377358490566,
+  "reprojection_error_px": 1.432210473376951,
+  "reprojection_error_m": 0.025779788520785114,
+  "scale": 0.9808870427658715,
+  "rotation_deg": -1.1342391278142014,
+  "match_ms": 0.3569000000425149,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0024",
+  "target_id": "DJI_0025",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    0.9741477795217448,
+    0.214215271037664,
+    -71.86670414784064
+   ],
+   [
+    -0.19714835583958762,
+    0.9693931886838205,
+    -134.22532228924194
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 264,
+  "inliers": 184,
+  "inlier_ratio": 0.696969696969697,
+  "reprojection_error_px": 1.153281123355134,
+  "reprojection_error_m": 0.020707162569841432,
+  "scale": 0.993330057793492,
+  "rotation_deg": -11.441009993507231,
+  "match_ms": 0.4067999980179593,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0024",
+  "target_id": "DJI_0026",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    0.953307636806985,
+    0.23484351567488795,
+    -91.48361329444334
+   ],
+   [
+    -0.2624614878703655,
+    0.9471769980580125,
+    -318.5395357179226
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 29,
+  "inliers": 18,
+  "inlier_ratio": 0.6206896551724138,
+  "reprojection_error_px": 1.2770851920611161,
+  "reprojection_error_m": 0.022930064623457338,
+  "scale": 0.9823381961613551,
+  "rotation_deg": -15.39311829323058,
+  "match_ms": 0.2308999974047765,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0024",
+  "target_id": "DJI_0033",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0068445245306339,
+    0.11939036422261487,
+    -360.0063901486464
+   ],
+   [
+    0.00559957931249061,
+    0.9577006538028364,
+    -403.52835440900435
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 42,
+  "inliers": 26,
+  "inlier_ratio": 0.6190476190476191,
+  "reprojection_error_px": 1.2084391544453283,
+  "reprojection_error_m": 0.02169752501806587,
+  "scale": 0.9858077094404367,
+  "rotation_deg": 0.31864796010951957,
+  "match_ms": 0.27970000155619346,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0024",
+  "target_id": "DJI_0034",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    0.9918160726120065,
+    0.04222264215295325,
+    -339.16011125604575
+   ],
+   [
+    -0.04494681275362705,
+    0.9585300808958049,
+    -162.03443937026526
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 228,
+  "inliers": 175,
+  "inlier_ratio": 0.7675438596491229,
+  "reprojection_error_px": 1.4551203335251968,
+  "reprojection_error_m": 0.026126685588444908,
+  "scale": 0.9761488541615921,
+  "rotation_deg": -2.594737049126706,
+  "match_ms": 0.45850000242353417,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0024",
+  "target_id": "DJI_0035",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    0.9853851158645355,
+    0.06286613423253998,
+    -358.3010238467641
+   ],
+   [
+    -0.07386474314844944,
+    0.9806932771304647,
+    59.69019231507324
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 322,
+  "inliers": 232,
+  "inlier_ratio": 0.7204968944099379,
+  "reprojection_error_px": 1.3334900541632275,
+  "reprojection_error_m": 0.02394281392250075,
+  "scale": 0.9854297561019854,
+  "rotation_deg": -4.286890203060106,
+  "match_ms": 0.44379999962984584,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0025",
+  "target_id": "DJI_0026",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0028907681542578,
+    0.020557794631578256,
+    -24.143549955050666
+   ],
+   [
+    0.002310991003299519,
+    1.0079661886493034,
+    -220.24108008798336
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 490,
+  "inliers": 388,
+  "inlier_ratio": 0.7918367346938775,
+  "reprojection_error_px": 1.2140537763789347,
+  "reprojection_error_m": 0.021852967974820822,
+  "scale": 1.0055351431373643,
+  "rotation_deg": 0.13202813389467774,
+  "match_ms": 0.711500000761589,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0025",
+  "target_id": "DJI_0027",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0137878895396728,
+    0.013032021479726303,
+    -45.246919928284896
+   ],
+   [
+    0.025548853245853317,
+    1.0351222536875522,
+    -461.600000661368
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 40,
+  "inliers": 28,
+  "inlier_ratio": 0.7,
+  "reprojection_error_px": 1.2916333570362803,
+  "reprojection_error_m": 0.023249400426653046,
+  "scale": 1.0246545758148917,
+  "rotation_deg": 1.4436271094191513,
+  "match_ms": 0.3065000018978026,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0025",
+  "target_id": "DJI_0032",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    0.9802667932479322,
+    -0.22259690915194685,
+    -220.45239794154872
+   ],
+   [
+    0.22076122254652297,
+    0.9795964249374144,
+    -498.0426249998441
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 104,
+  "inliers": 79,
+  "inlier_ratio": 0.7596153846153846,
+  "reprojection_error_px": 1.455365197246302,
+  "reprojection_error_m": 0.026196573550433432,
+  "scale": 1.0046931079754309,
+  "rotation_deg": 12.691575980997388,
+  "match_ms": 0.40689999877940863,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0025",
+  "target_id": "DJI_0033",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    0.9900072183918993,
+    -0.20305104394280207,
+    -262.8482493417945
+   ],
+   [
+    0.1951833478027137,
+    0.9708246864098511,
+    -270.124889809926
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 312,
+  "inliers": 223,
+  "inlier_ratio": 0.7147435897435898,
+  "reprojection_error_px": 1.50468750421402,
+  "reprojection_error_m": 0.027084375075852356,
+  "scale": 1.0004333488194213,
+  "rotation_deg": 11.153025078538976,
+  "match_ms": 0.5325000020093285,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0025",
+  "target_id": "DJI_0034",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0127883853240258,
+    -0.15740164565773046,
+    -309.92569220817853
+   ],
+   [
+    0.14276402645730232,
+    0.9828076092368695,
+    -25.61556172219961
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 536,
+  "inliers": 386,
+  "inlier_ratio": 0.7201492537313433,
+  "reprojection_error_px": 1.4746100309049017,
+  "reprojection_error_m": 0.026542980556288228,
+  "scale": 1.0090345804212952,
+  "rotation_deg": 8.023626171490731,
+  "match_ms": 0.5081000017526094,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0025",
+  "target_id": "DJI_0035",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    0.9926775351466519,
+    -0.1675376234467454,
+    -311.1907328024057
+   ],
+   [
+    0.11750767222033558,
+    0.9850140281869518,
+    203.23172453732656
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 210,
+  "inliers": 158,
+  "inlier_ratio": 0.7523809523809524,
+  "reprojection_error_px": 1.3477161312648858,
+  "reprojection_error_m": 0.024258890362767942,
+  "scale": 0.9993572746292468,
+  "rotation_deg": 6.750941666103995,
+  "match_ms": 0.415000002249144,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0026",
+  "target_id": "DJI_0027",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0116322589791016,
+    -0.0038316412082145448,
+    -23.48602494366139
+   ],
+   [
+    0.026834410521382118,
+    1.0239078040306053,
+    -236.34528081623813
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 376,
+  "inliers": 340,
+  "inlier_ratio": 0.9042553191489362,
+  "reprojection_error_px": 1.142363377035295,
+  "reprojection_error_m": 0.0206139471386019,
+  "scale": 1.0179494474521684,
+  "rotation_deg": 1.519463225615959,
+  "match_ms": 0.6166999992274214,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0026",
+  "target_id": "DJI_0028",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0144833507525954,
+    -0.05403761417605861,
+    -11.097570058799768
+   ],
+   [
+    0.09945957878419383,
+    1.0408839832385235,
+    -492.15091030195777
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 60,
+  "inliers": 38,
+  "inlier_ratio": 0.6333333333333333,
+  "reprojection_error_px": 1.1638458861302896,
+  "reprojection_error_m": 0.021001599015221077,
+  "scale": 1.0307732675526589,
+  "rotation_deg": 5.599363208941853,
+  "match_ms": 0.21700000070268288,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0026",
+  "target_id": "DJI_0031",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0218177325916915,
+    -0.18631668748892471,
+    -280.49444602363894
+   ],
+   [
+    0.2504655084702905,
+    0.9956545470354184,
+    -518.6131050866071
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 129,
+  "inliers": 110,
+  "inlier_ratio": 0.8527131782945736,
+  "reprojection_error_px": 1.0559319644734222,
+  "reprojection_error_m": 0.019054292298922904,
+  "scale": 1.0326699493808382,
+  "rotation_deg": 13.772656856972983,
+  "match_ms": 0.3758999991987366,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0026",
+  "target_id": "DJI_0032",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0004343717991953,
+    -0.20524238237350556,
+    -271.98982663493365
+   ],
+   [
+    0.2388983942912078,
+    0.9761791619668578,
+    -294.492208912228
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 224,
+  "inliers": 163,
+  "inlier_ratio": 0.7276785714285714,
+  "reprojection_error_px": 1.648108254825771,
+  "reprojection_error_m": 0.029740113458331042,
+  "scale": 1.0131285668065138,
+  "rotation_deg": 13.43041627449204,
+  "match_ms": 0.42320000284234993,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0026",
+  "target_id": "DJI_0033",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    0.975967360125013,
+    -0.20482538425001462,
+    -284.46883614361485
+   ],
+   [
+    0.18950232349179416,
+    0.963622301987863,
+    -53.48194414197725
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 273,
+  "inliers": 182,
+  "inlier_ratio": 0.6666666666666666,
+  "reprojection_error_px": 1.3783777613904789,
+  "reprojection_error_m": 0.024872826704291192,
+  "scale": 0.9896539888385394,
+  "rotation_deg": 10.988317211369091,
+  "match_ms": 0.4545999981928617,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0026",
+  "target_id": "DJI_0034",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0204483473599022,
+    -0.1684725909387007,
+    -332.179695495129
+   ],
+   [
+    0.16093226272362293,
+    0.9952997174448472,
+    174.46391221330862
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 262,
+  "inliers": 232,
+  "inlier_ratio": 0.8854961832061069,
+  "reprojection_error_px": 1.424344201788394,
+  "reprojection_error_m": 0.025702291121271575,
+  "scale": 1.021244251325862,
+  "rotation_deg": 8.962154175173247,
+  "match_ms": 0.5075000008218922,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0026",
+  "target_id": "DJI_0035",
+  "model": "affine",
+  "status": "insufficient_matches",
+  "matrix": null,
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 13,
+  "inliers": 0,
+  "inlier_ratio": null,
+  "reprojection_error_px": null,
+  "reprojection_error_m": null,
+  "scale": null,
+  "rotation_deg": null,
+  "match_ms": 0.0,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0027",
+  "target_id": "DJI_0028",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.007488549064069,
+    -0.05191602085081803,
+    0.4252951193974094
+   ],
+   [
+    0.07348550521864773,
+    1.0104388530457007,
+    -249.16093595640078
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 190,
+  "inliers": 124,
+  "inlier_ratio": 0.6526315789473685,
+  "reprojection_error_px": 1.3048480711679034,
+  "reprojection_error_m": 0.023487265281022258,
+  "scale": 1.0109663882311946,
+  "rotation_deg": 4.171726215111692,
+  "match_ms": 0.29709999944316223,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0027",
+  "target_id": "DJI_0029",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.016984576064638,
+    -0.027387116139794512,
+    -36.81219673235385
+   ],
+   [
+    -0.00392907133332539,
+    1.0424363339117522,
+    -443.0957030504099
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 31,
+  "inliers": 20,
+  "inlier_ratio": 0.6451612903225806,
+  "reprojection_error_px": 1.1298808323599194,
+  "reprojection_error_m": 0.02033785498247855,
+  "scale": 1.0298985057315515,
+  "rotation_deg": -0.22135840606718765,
+  "match_ms": 0.2870999996957835,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0027",
+  "target_id": "DJI_0030",
+  "model": "affine",
+  "status": "insufficient_matches",
+  "matrix": null,
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 10,
+  "inliers": 0,
+  "inlier_ratio": null,
+  "reprojection_error_px": null,
+  "reprojection_error_m": null,
+  "scale": null,
+  "rotation_deg": null,
+  "match_ms": 0.0,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0027",
+  "target_id": "DJI_0031",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    0.9993568572201385,
+    -0.17670964607760126,
+    -285.46111052880127
+   ],
+   [
+    0.21820856752611859,
+    0.9734288155438261,
+    -280.56868118137703
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 152,
+  "inliers": 116,
+  "inlier_ratio": 0.7631578947368421,
+  "reprojection_error_px": 1.1976078471548435,
+  "reprojection_error_m": 0.02155694124878718,
+  "scale": 1.0062231064187401,
+  "rotation_deg": 12.31715889020234,
+  "match_ms": 0.30189999961294234,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0027",
+  "target_id": "DJI_0032",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0000154097839395,
+    -0.19810169899053423,
+    -299.5447455910653
+   ],
+   [
+    0.20266646157347587,
+    0.9724803556295802,
+    -60.899056836110205
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 113,
+  "inliers": 82,
+  "inlier_ratio": 0.7256637168141593,
+  "reprojection_error_px": 1.308425310389103,
+  "reprojection_error_m": 0.023551655587003853,
+  "scale": 1.0064111733077739,
+  "rotation_deg": 11.456585944171705,
+  "match_ms": 0.3493000003800262,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0027",
+  "target_id": "DJI_0033",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0071550699439322,
+    -0.17213212554232085,
+    -332.0800025507476
+   ],
+   [
+    0.16649718728883922,
+    0.9915747569451786,
+    168.48323295642862
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 68,
+  "inliers": 55,
+  "inlier_ratio": 0.8088235294117647,
+  "reprojection_error_px": 1.1917477256424516,
+  "reprojection_error_m": 0.021451459061564128,
+  "scale": 1.013607351785161,
+  "rotation_deg": 9.386917873260446,
+  "match_ms": 0.22279999757301994,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0027",
+  "target_id": "DJI_0034",
+  "model": "affine",
+  "status": "rejected_by_ransac",
+  "matrix": null,
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 23,
+  "inliers": 9,
+  "inlier_ratio": 0.391304347826087,
+  "reprojection_error_px": null,
+  "reprojection_error_m": null,
+  "scale": null,
+  "rotation_deg": null,
+  "match_ms": 0.25380000079167075,
+  "error": "9 inliers below minimum 12"
+ },
+ {
+  "source_id": "DJI_0028",
+  "target_id": "DJI_0029",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0138942999786864,
+    0.027526845106100133,
+    -34.65052340225775
+   ],
+   [
+    -0.024559493644856014,
+    1.024769294618886,
+    -206.89998587385878
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 221,
+  "inliers": 165,
+  "inlier_ratio": 0.746606334841629,
+  "reprojection_error_px": 1.09835046006902,
+  "reprojection_error_m": 0.019819734051945467,
+  "scale": 1.0196657250499594,
+  "rotation_deg": -1.387600476057176,
+  "match_ms": 0.5229999987932388,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0028",
+  "target_id": "DJI_0030",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0997297383069375,
+    -0.020324014923722572,
+    -417.6530186270735
+   ],
+   [
+    0.07399323158035939,
+    1.0108325184675,
+    -208.58161242292005
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 57,
+  "inliers": 32,
+  "inlier_ratio": 0.5614035087719298,
+  "reprojection_error_px": 1.200585885064684,
+  "reprojection_error_m": 0.021664572295992224,
+  "scale": 1.0567272944063406,
+  "rotation_deg": 3.8492364324959865,
+  "match_ms": 0.2945000014733523,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0028",
+  "target_id": "DJI_0031",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0151798539494723,
+    -0.1768756735643011,
+    -321.2755389086763
+   ],
+   [
+    0.16252645439302477,
+    0.9867581822976692,
+    -55.65486595432892
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 55,
+  "inliers": 26,
+  "inlier_ratio": 0.4727272727272727,
+  "reprojection_error_px": 1.5428512709771887,
+  "reprojection_error_m": 0.027840751184783373,
+  "scale": 1.01526326901338,
+  "rotation_deg": 9.095652073515463,
+  "match_ms": 0.26280000020051375,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0028",
+  "target_id": "DJI_0032",
+  "model": "affine",
+  "status": "rejected_by_ransac",
+  "matrix": null,
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 21,
+  "inliers": 11,
+  "inlier_ratio": 0.5238095238095238,
+  "reprojection_error_px": null,
+  "reprojection_error_m": null,
+  "scale": null,
+  "rotation_deg": null,
+  "match_ms": 0.22650000028079376,
+  "error": "11 inliers below minimum 12"
+ },
+ {
+  "source_id": "DJI_0028",
+  "target_id": "DJI_0033",
+  "model": "affine",
+  "status": "insufficient_matches",
+  "matrix": null,
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 14,
+  "inliers": 0,
+  "inlier_ratio": null,
+  "reprojection_error_px": null,
+  "reprojection_error_m": null,
+  "scale": null,
+  "rotation_deg": null,
+  "match_ms": 0.0,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0029",
+  "target_id": "DJI_0030",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0145610871991242,
+    -0.04929503982270554,
+    -355.2318351639801
+   ],
+   [
+    0.057736972404008866,
+    0.9791888831991626,
+    19.806224230308228
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 122,
+  "inliers": 54,
+  "inlier_ratio": 0.4426229508196721,
+  "reprojection_error_px": 1.505729853991554,
+  "reprojection_error_m": 0.027170895215277595,
+  "scale": 0.9983237769425102,
+  "rotation_deg": 3.257093796048646,
+  "match_ms": 0.2925000007962808,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0029",
+  "target_id": "DJI_0031",
+  "model": "affine",
+  "status": "insufficient_matches",
+  "matrix": null,
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 15,
+  "inliers": 0,
+  "inlier_ratio": null,
+  "reprojection_error_px": null,
+  "reprojection_error_m": null,
+  "scale": null,
+  "rotation_deg": null,
+  "match_ms": 0.0,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0029",
+  "target_id": "DJI_0032",
+  "model": "affine",
+  "status": "insufficient_matches",
+  "matrix": null,
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 9,
+  "inliers": 0,
+  "inlier_ratio": null,
+  "reprojection_error_px": null,
+  "reprojection_error_m": null,
+  "scale": null,
+  "rotation_deg": null,
+  "match_ms": 0.0,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0030",
+  "target_id": "DJI_0031",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    0.9879360686135222,
+    -0.11530515017365096,
+    16.676725155040057
+   ],
+   [
+    0.09197342869830702,
+    0.9594680495247274,
+    184.5275160364472
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 270,
+  "inliers": 165,
+  "inlier_ratio": 0.6111111111111112,
+  "reprojection_error_px": 1.416155663521157,
+  "reprojection_error_m": 0.02555452894823928,
+  "scale": 0.9792541611384964,
+  "rotation_deg": 5.318708434582647,
+  "match_ms": 0.4350000017439015,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0030",
+  "target_id": "DJI_0032",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.017962762499335,
+    -0.032264504114591176,
+    -30.496637738661533
+   ],
+   [
+    0.1337833995577046,
+    0.9683937449143373,
+    349.8557922602493
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 22,
+  "inliers": 12,
+  "inlier_ratio": 0.5454545454545454,
+  "reprojection_error_px": 1.1572927259266206,
+  "reprojection_error_m": 0.02088334723934587,
+  "scale": 0.9980325459010567,
+  "rotation_deg": 7.487056660663026,
+  "match_ms": 0.270799999270821,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0031",
+  "target_id": "DJI_0032",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0120510574526131,
+    -0.007433323443018597,
+    -23.253369675363665
+   ],
+   [
+    -0.004494547212015661,
+    0.9869788845491893,
+    209.66091683171845
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 308,
+  "inliers": 210,
+  "inlier_ratio": 0.6818181818181818,
+  "reprojection_error_px": 1.3860654349869117,
+  "reprojection_error_m": 0.025073923718913236,
+  "scale": 0.9995337367446657,
+  "rotation_deg": -0.2544504955600635,
+  "match_ms": 0.3725000024132896,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0031",
+  "target_id": "DJI_0033",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0040077152069895,
+    0.012784443601143357,
+    -42.19799148485372
+   ],
+   [
+    -0.014018319093828821,
+    1.0044900011703275,
+    415.66194024907406
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 79,
+  "inliers": 74,
+  "inlier_ratio": 0.9367088607594937,
+  "reprojection_error_px": 0.9010504540935175,
+  "reprojection_error_m": 0.01630000271455173,
+  "scale": 1.0043384602713181,
+  "rotation_deg": -0.799932431337064,
+  "match_ms": 0.41000000055646524,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0032",
+  "target_id": "DJI_0033",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0033888003980198,
+    0.024931402361443734,
+    -30.64980615194952
+   ],
+   [
+    -0.01969827854121048,
+    0.9988133628275153,
+    213.423845842559
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 201,
+  "inliers": 176,
+  "inlier_ratio": 0.8756218905472637,
+  "reprojection_error_px": 1.1711967660840563,
+  "reprojection_error_m": 0.021134245643986797,
+  "scale": 1.0013530379526543,
+  "rotation_deg": -1.124671975543192,
+  "match_ms": 0.3622999975050334,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0032",
+  "target_id": "DJI_0034",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0198572854580001,
+    0.053762869529967214,
+    -49.886944886613605
+   ],
+   [
+    -0.06190232327363734,
+    1.0251226982908845,
+    442.12259565319243
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 74,
+  "inliers": 53,
+  "inlier_ratio": 0.7162162162162162,
+  "reprojection_error_px": 1.2618665002474883,
+  "reprojection_error_m": 0.02277038099696593,
+  "scale": 1.0241316890971368,
+  "rotation_deg": -3.4734231588800215,
+  "match_ms": 0.2625999986776151,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0033",
+  "target_id": "DJI_0034",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0115050210710446,
+    0.0371392316099507,
+    -25.878378100720823
+   ],
+   [
+    -0.044522176947649705,
+    1.0231884960140145,
+    223.33900870724136
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 530,
+  "inliers": 436,
+  "inlier_ratio": 0.8226415094339623,
+  "reprojection_error_px": 1.3134766540011,
+  "reprojection_error_m": 0.02370168622144985,
+  "scale": 1.0181716484421752,
+  "rotation_deg": -2.520291358410031,
+  "match_ms": 0.720199997886084,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0033",
+  "target_id": "DJI_0035",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.0220304540525034,
+    0.052956203091284584,
+    -41.45670108098515
+   ],
+   [
+    -0.0652694924498656,
+    1.0353020835341127,
+    441.5263133325344
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 83,
+  "inliers": 53,
+  "inlier_ratio": 0.6385542168674698,
+  "reprojection_error_px": 1.2812208268803242,
+  "reprojection_error_m": 0.023119629821055452,
+  "scale": 1.0303794773381658,
+  "rotation_deg": -3.654093526716038,
+  "match_ms": 0.30699999842909165,
+  "error": null
+ },
+ {
+  "source_id": "DJI_0034",
+  "target_id": "DJI_0035",
+  "model": "affine",
+  "status": "ok",
+  "matrix": [
+   [
+    1.010182389158115,
+    0.01349041338559276,
+    -17.833771632603238
+   ],
+   [
+    -0.024760030383493184,
+    1.0218350065679163,
+    216.09795494216726
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "keypoints_source": 3000,
+  "keypoints_target": 3000,
+  "raw_matches": 3000,
+  "ratio_filtered_matches": 453,
+  "inliers": 393,
+  "inlier_ratio": 0.8675496688741722,
+  "reprojection_error_px": 1.3005406377434483,
+  "reprojection_error_m": 0.02340973147938207,
+  "scale": 1.0162037028009645,
+  "rotation_deg": -1.4040645229875688,
+  "match_ms": 0.45279999903868884,
+  "error": null
+ }
+]

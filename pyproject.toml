@@ -1,0 +1,33 @@
+[project]
+name = "edgeortho"
+version = "0.1.0"
+description = "Local edge-optimised 2D drone orthomosaic generation"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+# The backend is imported as a package from backend/, and the shared fixtures live
+# in tests/, so both directories are on the path during a test run.
+pythonpath = ["backend", "tests"]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
+markers = [
+    "slow: end-to-end runs that invoke the whole pipeline",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["backend"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "C4", "SIM", "RUF"]
+ignore = [
+    "E501",   # long lines are handled by the formatter, comments are allowed to run
+    "RUF001", # ambiguous unicode in strings: the report text uses ° and × deliberately
+    "RUF002",
+    "RUF003",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S101"]                       # asserts are the point of a test
+"scripts/*" = ["T201"]                     # the CLI scripts print for the operator

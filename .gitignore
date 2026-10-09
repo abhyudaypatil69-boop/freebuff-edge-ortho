@@ -1,0 +1,48 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+*.egg-info/
+.coverage
+htmlcov/
+
+# Frontend dependencies and build output
+frontend/node_modules/
+frontend/dist/
+
+# Local data and generated processing results
+# Raw imagery is intentionally not redistributed; see README.md.
+data/raw/
+data/uploads/
+data/processed/
+outputs/
+
+# Local databases, logs, and runtime files
+*.sqlite
+*.sqlite3
+*.db
+data/*.sqlite*
+frontend/*.tsbuildinfo
+*.log
+*.tmp
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Agent-local working files
+.manus/

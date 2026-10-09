@@ -1,0 +1,1749 @@
+{
+  "run_id": "20261009-090953-1fb64d",
+  "name": "Brighton Beach transect (pi-class, affine+homography)",
+  "status": "succeeded",
+  "error": null,
+  "created_at": "2026-10-09T09:09:53+00:00",
+  "finished_at": "2026-10-09T09:12:08+00:00",
+  "source": {
+    "root": "D:\\Project_1\\edge-ortho\\data\\raw\\brighton_beach\\images",
+    "image_count": 18,
+    "images": [
+      "D:\\Project_1\\edge-ortho\\data\\raw\\brighton_beach\\images\\DJI_0018.JPG",
+      "D:\\Project_1\\edge-ortho\\data\\raw\\brighton_beach\\images\\DJI_0019.JPG",
+      "D:\\Project_1\\edge-ortho\\data\\raw\\brighton_beach\\images\\DJI_0020.JPG",
+      "D:\\Project_1\\edge-ortho\\data\\raw\\brighton_beach\\images\\DJI_0021.JPG",
+      "D:\\Project_1\\edge-ortho\\data\\raw\\brighton_beach\\images\\DJI_0022.JPG",
+      "D:\\Project_1\\edge-ortho\\data\\raw\\brighton_beach\\images\\DJI_0023.JPG",
+      "D:\\Project_1\\edge-ortho\\data\\raw\\brighton_beach\\images\\DJI_0024.JPG",
+      "D:\\Project_1\\edge-ortho\\data\\raw\\brighton_beach\\images\\DJI_0025.JPG",
+      "D:\\Project_1\\edge-ortho\\data\\raw\\brighton_beach\\images\\DJI_0026.JPG",
+      "D:\\Project_1\\edge-ortho\\data\\raw\\brighton_beach\\images\\DJI_0027.JPG",
+      "D:\\Project_1\\edge-ortho\\data\\raw\\brighton_beach\\images\\DJI_0028.JPG",
+      "D:\\Project_1\\edge-ortho\\data\\raw\\brighton_beach\\images\\DJI_0029.JPG",
+      "D:\\Project_1\\edge-ortho\\data\\raw\\brighton_beach\\images\\DJI_0030.JPG",
+      "D:\\Project_1\\edge-ortho\\data\\raw\\brighton_beach\\images\\DJI_0031.JPG",
+      "D:\\Project_1\\edge-ortho\\data\\raw\\brighton_beach\\images\\DJI_0032.JPG",
+      "D:\\Project_1\\edge-ortho\\data\\raw\\brighton_beach\\images\\DJI_0033.JPG",
+      "D:\\Project_1\\edge-ortho\\data\\raw\\brighton_beach\\images\\DJI_0034.JPG",
+      "D:\\Project_1\\edge-ortho\\data\\raw\\brighton_beach\\images\\DJI_0035.JPG"
+    ],
+    "skipped_unsupported": [],
+    "skipped_unsupported_count": 0,
+    "missing": []
+  },
+  "settings": {
+    "profile": "pi-class",
+    "preset": "balanced",
+    "matching_megapixels": 0.6,
+    "feature_detector": "orb",
+    "orb_features": 3000,
+    "ratio_threshold": 0.75,
+    "ransac_threshold_px": 3.0,
+    "ransac_confidence": 0.999,
+    "ransac_max_iters": 5000,
+    "min_matches": 18,
+    "min_inliers": 12,
+    "max_reprojection_error_px": 3.0,
+    "neighbour_radius_factor": 0.85,
+    "neighbour_max_links": 12,
+    "min_estimated_overlap": 0.15,
+    "alignment_model": "both",
+    "global_max_iterations": 60,
+    "gps_prior_weight": 0.05,
+    "tile_size": 2048,
+    "max_output_megapixels": 60.0,
+    "decode_cache_size": 2,
+    "seam_blend_px": 48,
+    "exposure_compensation": true,
+    "output_gsd_m": null,
+    "min_valid_frames": 4
+  },
+  "profile": "pi-class",
+  "profile_enforcement": {
+    "profile": "pi-class",
+    "cpu_affinity_applied": true,
+    "cpu_affinity_requested": 4,
+    "ram_ceiling_enforced": true,
+    "ram_limit_mb": 4096,
+    "notes": [
+      "RAM limit is a soft ceiling: the run aborts if process RSS exceeds it. It does not emulate physical Raspberry Pi or Jetson memory bandwidth."
+    ],
+    "cpu_affinity_actual": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "crs": "EPSG:32615 - WGS 84 / UTM zone 15N",
+  "metadata_summary": {
+    "frames_discovered": 18,
+    "frames_accepted": 18,
+    "frames_rejected": 0,
+    "rejected_by_reason": {},
+    "unsupported_files_skipped": 0,
+    "total_bytes": 64898696,
+    "total_megapixels": 162.0,
+    "gps_available": true,
+    "altitude_available": true,
+    "altitude_range_m": [
+      39.8,
+      40.2
+    ],
+    "altitude_source": "xmp_relative",
+    "yaw_available": true,
+    "yaw_source": "xmp_gimbal",
+    "gsd_available": true,
+    "gsd_m": 0.018045000000000002,
+    "gsd_source": "35mm_equiv",
+    "footprint_m": 72.18,
+    "image_dimensions": [
+      "4000x2250"
+    ],
+    "camera_models": [
+      "FC300S"
+    ],
+    "flight_extent": {
+      "easting_m": [
+        576663.0979257183,
+        576747.1640715621
+      ],
+      "northing_m": [
+        5188128.853419981,
+        5188213.068567798
+      ],
+      "width_m": 84.06614584382623,
+      "height_m": 84.21514781657606
+    },
+    "capture_window": {
+      "first": "2016:06:23 16:31:59",
+      "last": "2016:06:23 16:34:03"
+    }
+  },
+  "dataset_warnings": [],
+  "plan": {
+    "selection_method": "gps_kdtree",
+    "radius_m": 70.39321021148919,
+    "candidate_pairs": 91,
+    "all_pairs_possible": 153,
+    "pairs_below_overlap": 104,
+    "reduction_factor": 1.6813186813186813,
+    "notes": [
+      "candidate radius 70.4 m = 0.85 x footprint_diagonal (82.8 m)",
+      "estimated ground overlap: min 17%, median 40%, max 67%"
+    ],
+    "pairs": [
+      {
+        "source_id": "DJI_0018",
+        "target_id": "DJI_0019",
+        "distance_m": 13.730825703594416,
+        "estimated_overlap": 0.6599305374732564,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0018",
+        "target_id": "DJI_0020",
+        "distance_m": 27.451905501550932,
+        "estimated_overlap": 0.32170432074371197,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0018",
+        "target_id": "DJI_0027",
+        "distance_m": 36.38214590911339,
+        "estimated_overlap": 0.22302885132957506,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0018",
+        "target_id": "DJI_0028",
+        "distance_m": 28.362278632916162,
+        "estimated_overlap": 0.44629694574780293,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0018",
+        "target_id": "DJI_0029",
+        "distance_m": 25.858229961686238,
+        "estimated_overlap": 0.6337086831033744,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0018",
+        "target_id": "DJI_0030",
+        "distance_m": 51.227127683076766,
+        "estimated_overlap": 0.2871354280789524,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0018",
+        "target_id": "DJI_0031",
+        "distance_m": 53.13482535641154,
+        "estimated_overlap": 0.19396584785881665,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0019",
+        "target_id": "DJI_0020",
+        "distance_m": 13.725940576205154,
+        "estimated_overlap": 0.6596871139220892,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0019",
+        "target_id": "DJI_0021",
+        "distance_m": 27.225379800101408,
+        "estimated_overlap": 0.32884661684326455,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0019",
+        "target_id": "DJI_0026",
+        "distance_m": 36.059671056646664,
+        "estimated_overlap": 0.23544025360785803,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0019",
+        "target_id": "DJI_0027",
+        "distance_m": 27.926706887163775,
+        "estimated_overlap": 0.45363379375107166,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0019",
+        "target_id": "DJI_0028",
+        "distance_m": 25.099149195734164,
+        "estimated_overlap": 0.6305627500785173,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0019",
+        "target_id": "DJI_0029",
+        "distance_m": 29.417471422997885,
+        "estimated_overlap": 0.41562764240781824,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0019",
+        "target_id": "DJI_0030",
+        "distance_m": 52.450438873455184,
+        "estimated_overlap": 0.19479045263430617,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0019",
+        "target_id": "DJI_0031",
+        "distance_m": 50.62796636054703,
+        "estimated_overlap": 0.2897433547738911,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0019",
+        "target_id": "DJI_0032",
+        "distance_m": 52.39439463432515,
+        "estimated_overlap": 0.20500019577248071,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0020",
+        "target_id": "DJI_0021",
+        "distance_m": 13.501426546857859,
+        "estimated_overlap": 0.6644458014300555,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0020",
+        "target_id": "DJI_0022",
+        "distance_m": 27.029168919251276,
+        "estimated_overlap": 0.3318595032776881,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0020",
+        "target_id": "DJI_0025",
+        "distance_m": 36.104317919911836,
+        "estimated_overlap": 0.23418722556678348,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0020",
+        "target_id": "DJI_0026",
+        "distance_m": 28.040780627915506,
+        "estimated_overlap": 0.4511490554310248,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0020",
+        "target_id": "DJI_0027",
+        "distance_m": 25.2788509966417,
+        "estimated_overlap": 0.6336155016235854,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0020",
+        "target_id": "DJI_0028",
+        "distance_m": 29.29772564737653,
+        "estimated_overlap": 0.4126505334049888,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0020",
+        "target_id": "DJI_0029",
+        "distance_m": 38.28003473650146,
+        "estimated_overlap": 0.1993227105241454,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0020",
+        "target_id": "DJI_0031",
+        "distance_m": 52.27148958232308,
+        "estimated_overlap": 0.1964407402631115,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0020",
+        "target_id": "DJI_0032",
+        "distance_m": 50.42597513711726,
+        "estimated_overlap": 0.2958181331969313,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0020",
+        "target_id": "DJI_0033",
+        "distance_m": 52.42570166093417,
+        "estimated_overlap": 0.200846803381382,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0021",
+        "target_id": "DJI_0022",
+        "distance_m": 13.528515523864117,
+        "estimated_overlap": 0.6656432464437815,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0021",
+        "target_id": "DJI_0023",
+        "distance_m": 27.26128915778523,
+        "estimated_overlap": 0.32808338892639743,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0021",
+        "target_id": "DJI_0024",
+        "distance_m": 36.599703275456804,
+        "estimated_overlap": 0.24140016081732088,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0021",
+        "target_id": "DJI_0025",
+        "distance_m": 28.60103844683439,
+        "estimated_overlap": 0.4434494159588109,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0021",
+        "target_id": "DJI_0026",
+        "distance_m": 25.78679412256898,
+        "estimated_overlap": 0.629864352985643,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0021",
+        "target_id": "DJI_0027",
+        "distance_m": 29.74043844422737,
+        "estimated_overlap": 0.4156140823259602,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0021",
+        "target_id": "DJI_0028",
+        "distance_m": 38.29945013231065,
+        "estimated_overlap": 0.19645560171713292,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0021",
+        "target_id": "DJI_0032",
+        "distance_m": 52.38518876874592,
+        "estimated_overlap": 0.19737048400788754,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0021",
+        "target_id": "DJI_0033",
+        "distance_m": 50.85017817144561,
+        "estimated_overlap": 0.29406234562090283,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0021",
+        "target_id": "DJI_0034",
+        "distance_m": 52.59463469562417,
+        "estimated_overlap": 0.19370006618421817,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0022",
+        "target_id": "DJI_0023",
+        "distance_m": 13.733502499186317,
+        "estimated_overlap": 0.6593075348025977,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0022",
+        "target_id": "DJI_0024",
+        "distance_m": 28.74778761816264,
+        "estimated_overlap": 0.45423942797770367,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0022",
+        "target_id": "DJI_0025",
+        "distance_m": 26.200892567768598,
+        "estimated_overlap": 0.624396733572311,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0022",
+        "target_id": "DJI_0026",
+        "distance_m": 29.97571064034927,
+        "estimated_overlap": 0.4129908756216648,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0022",
+        "target_id": "DJI_0027",
+        "distance_m": 38.54586655064541,
+        "estimated_overlap": 0.19910572193287038,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0022",
+        "target_id": "DJI_0033",
+        "distance_m": 52.60763753892802,
+        "estimated_overlap": 0.19743766230515114,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0022",
+        "target_id": "DJI_0034",
+        "distance_m": 50.83460335412566,
+        "estimated_overlap": 0.2880240892134795,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0022",
+        "target_id": "DJI_0035",
+        "distance_m": 52.44558593983422,
+        "estimated_overlap": 0.19209186988275892,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0023",
+        "target_id": "DJI_0024",
+        "distance_m": 25.875470106958424,
+        "estimated_overlap": 0.6043489170410825,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0023",
+        "target_id": "DJI_0025",
+        "distance_m": 30.279721068365202,
+        "estimated_overlap": 0.4022233878533331,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0023",
+        "target_id": "DJI_0026",
+        "distance_m": 38.725876977396524,
+        "estimated_overlap": 0.19198353038730281,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0023",
+        "target_id": "DJI_0034",
+        "distance_m": 52.472303998204154,
+        "estimated_overlap": 0.19683646972291796,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0023",
+        "target_id": "DJI_0035",
+        "distance_m": 50.48488980032482,
+        "estimated_overlap": 0.2972164284872256,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0024",
+        "target_id": "DJI_0025",
+        "distance_m": 14.10280768314366,
+        "estimated_overlap": 0.6466041056547585,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0024",
+        "target_id": "DJI_0026",
+        "distance_m": 27.59856218397009,
+        "estimated_overlap": 0.31746325317486307,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0024",
+        "target_id": "DJI_0033",
+        "distance_m": 35.7162517516353,
+        "estimated_overlap": 0.22883979962794587,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0024",
+        "target_id": "DJI_0034",
+        "distance_m": 27.657512381293646,
+        "estimated_overlap": 0.4503024664826479,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0024",
+        "target_id": "DJI_0035",
+        "distance_m": 24.68713279345649,
+        "estimated_overlap": 0.6398965121355147,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0025",
+        "target_id": "DJI_0026",
+        "distance_m": 13.500661779126933,
+        "estimated_overlap": 0.664121413922631,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0025",
+        "target_id": "DJI_0027",
+        "distance_m": 27.094066975409298,
+        "estimated_overlap": 0.325717864338679,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0025",
+        "target_id": "DJI_0032",
+        "distance_m": 35.053615683108895,
+        "estimated_overlap": 0.2571100730203237,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0025",
+        "target_id": "DJI_0033",
+        "distance_m": 27.29704824642369,
+        "estimated_overlap": 0.4783097027905795,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0025",
+        "target_id": "DJI_0034",
+        "distance_m": 24.773319459475157,
+        "estimated_overlap": 0.6119789667308135,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0025",
+        "target_id": "DJI_0035",
+        "distance_m": 28.971269010576552,
+        "estimated_overlap": 0.39682943686481886,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0026",
+        "target_id": "DJI_0027",
+        "distance_m": 13.593602145407004,
+        "estimated_overlap": 0.6603006747524434,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0026",
+        "target_id": "DJI_0028",
+        "distance_m": 27.04611486154081,
+        "estimated_overlap": 0.3299582154845382,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0026",
+        "target_id": "DJI_0031",
+        "distance_m": 35.42625932130693,
+        "estimated_overlap": 0.253811378114251,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0026",
+        "target_id": "DJI_0032",
+        "distance_m": 27.469942780664926,
+        "estimated_overlap": 0.47378377169294644,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0026",
+        "target_id": "DJI_0033",
+        "distance_m": 25.20387817158722,
+        "estimated_overlap": 0.6126450372213501,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0026",
+        "target_id": "DJI_0034",
+        "distance_m": 29.440684312721274,
+        "estimated_overlap": 0.3950056660556173,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0026",
+        "target_id": "DJI_0035",
+        "distance_m": 38.16917943175698,
+        "estimated_overlap": 0.175525304221322,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0027",
+        "target_id": "DJI_0028",
+        "distance_m": 13.452523888011559,
+        "estimated_overlap": 0.6651908550079304,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0027",
+        "target_id": "DJI_0029",
+        "distance_m": 26.987523204078816,
+        "estimated_overlap": 0.3277186850297925,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0027",
+        "target_id": "DJI_0030",
+        "distance_m": 35.982013692641026,
+        "estimated_overlap": 0.25134344323345337,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0027",
+        "target_id": "DJI_0031",
+        "distance_m": 27.80037429119679,
+        "estimated_overlap": 0.4737002944423011,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0027",
+        "target_id": "DJI_0032",
+        "distance_m": 25.30329922713148,
+        "estimated_overlap": 0.6121279450928069,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0027",
+        "target_id": "DJI_0033",
+        "distance_m": 29.794234562772246,
+        "estimated_overlap": 0.3927380387838649,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0027",
+        "target_id": "DJI_0034",
+        "distance_m": 38.53207784967147,
+        "estimated_overlap": 0.17076013893243724,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0028",
+        "target_id": "DJI_0029",
+        "distance_m": 13.53820336989699,
+        "estimated_overlap": 0.6586560177544813,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0028",
+        "target_id": "DJI_0030",
+        "distance_m": 28.297230568104577,
+        "estimated_overlap": 0.45918785244253246,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0028",
+        "target_id": "DJI_0031",
+        "distance_m": 25.657257339688996,
+        "estimated_overlap": 0.6181283969125932,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0028",
+        "target_id": "DJI_0032",
+        "distance_m": 29.828011648664166,
+        "estimated_overlap": 0.39953431141820084,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0028",
+        "target_id": "DJI_0033",
+        "distance_m": 38.73175047074479,
+        "estimated_overlap": 0.18108469774939143,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0029",
+        "target_id": "DJI_0030",
+        "distance_m": 25.448967417965026,
+        "estimated_overlap": 0.6110473161259042,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0029",
+        "target_id": "DJI_0031",
+        "distance_m": 29.783672644112634,
+        "estimated_overlap": 0.39842832186328747,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0029",
+        "target_id": "DJI_0032",
+        "distance_m": 38.53504230825948,
+        "estimated_overlap": 0.17846552696536827,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0030",
+        "target_id": "DJI_0031",
+        "distance_m": 14.104010384232826,
+        "estimated_overlap": 0.651239489725277,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0030",
+        "target_id": "DJI_0032",
+        "distance_m": 27.63840717880568,
+        "estimated_overlap": 0.3175302176906678,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0031",
+        "target_id": "DJI_0032",
+        "distance_m": 13.534653863953627,
+        "estimated_overlap": 0.6645880072277534,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0031",
+        "target_id": "DJI_0033",
+        "distance_m": 27.025018309341,
+        "estimated_overlap": 0.3317750122857635,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0032",
+        "target_id": "DJI_0033",
+        "distance_m": 13.492002797295964,
+        "estimated_overlap": 0.6625820474135956,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0032",
+        "target_id": "DJI_0034",
+        "distance_m": 26.938935137340966,
+        "estimated_overlap": 0.33425223764194967,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0033",
+        "target_id": "DJI_0034",
+        "distance_m": 13.447959280630647,
+        "estimated_overlap": 0.668077564052383,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0033",
+        "target_id": "DJI_0035",
+        "distance_m": 26.959245096015174,
+        "estimated_overlap": 0.3349620259184242,
+        "selection": "gps_kdtree"
+      },
+      {
+        "source_id": "DJI_0034",
+        "target_id": "DJI_0035",
+        "distance_m": 13.511616619074687,
+        "estimated_overlap": 0.6630080455059408,
+        "selection": "gps_kdtree"
+      }
+    ]
+  },
+  "ingest_summary": {
+    "frames_discovered": 18,
+    "frames_accepted": 18,
+    "frames_rejected": 0,
+    "rejected_by_reason": {},
+    "unsupported_files_skipped": 0,
+    "total_bytes": 64898696,
+    "total_megapixels": 162.0,
+    "gps_available": true,
+    "altitude_available": true,
+    "altitude_range_m": [
+      39.8,
+      40.2
+    ],
+    "altitude_source": "xmp_relative",
+    "yaw_available": true,
+    "yaw_source": "xmp_gimbal",
+    "gsd_available": true,
+    "gsd_m": 0.018045000000000002,
+    "gsd_source": "35mm_equiv",
+    "footprint_m": 72.18,
+    "image_dimensions": [
+      "4000x2250"
+    ],
+    "camera_models": [
+      "FC300S"
+    ],
+    "flight_extent": {
+      "easting_m": [
+        576663.0979257183,
+        576747.1640715621
+      ],
+      "northing_m": [
+        5188128.853419981,
+        5188213.068567798
+      ],
+      "width_m": 84.06614584382623,
+      "height_m": 84.21514781657606
+    },
+    "capture_window": {
+      "first": "2016:06:23 16:31:59",
+      "last": "2016:06:23 16:34:03"
+    }
+  },
+  "stages": [
+    {
+      "name": "ingest",
+      "index": 0,
+      "status": "done",
+      "started_at": "2026-10-09T09:09:53+00:00",
+      "finished_at": "2026-10-09T09:09:53+00:00",
+      "elapsed_s": 0.024110799997288268,
+      "detail": "18 candidate file(s) discovered",
+      "error": null,
+      "unsupported_reason": null,
+      "counters": {
+        "files_discovered": 18,
+        "unsupported_skipped": 0,
+        "input_bytes": 64898696
+      },
+      "rss_mb_at_end": 277.2421875
+    },
+    {
+      "name": "validate_gps",
+      "index": 1,
+      "status": "done",
+      "started_at": "2026-10-09T09:09:53+00:00",
+      "finished_at": "2026-10-09T09:09:53+00:00",
+      "elapsed_s": 0.0031319999980041757,
+      "detail": "18 accepted, 0 rejected; CRS EPSG:32615 - WGS 84 / UTM zone 15N",
+      "error": null,
+      "unsupported_reason": null,
+      "counters": {
+        "accepted": 18,
+        "rejected": 0,
+        "rejected_by_reason": {},
+        "crs": "EPSG:32615 - WGS 84 / UTM zone 15N",
+        "gsd_m": 0.018045000000000002,
+        "gsd_source": "35mm_equiv",
+        "gps_available": true
+      },
+      "rss_mb_at_end": 277.26171875
+    },
+    {
+      "name": "plan_neighbours",
+      "index": 2,
+      "status": "done",
+      "started_at": "2026-10-09T09:09:53+00:00",
+      "finished_at": "2026-10-09T09:09:53+00:00",
+      "elapsed_s": 0.006715699997585034,
+      "detail": "91 candidate pair(s) from 153 possible; 1.7x fewer",
+      "error": null,
+      "unsupported_reason": null,
+      "counters": {
+        "candidate_pairs": 91,
+        "all_pairs_possible": 153,
+        "reduction_factor": 1.6813186813186813,
+        "radius_m": 70.39321021148919,
+        "selection_method": "gps_kdtree",
+        "pairs_below_overlap": 104
+      },
+      "rss_mb_at_end": 277.265625
+    },
+    {
+      "name": "match_features",
+      "index": 3,
+      "status": "done",
+      "started_at": "2026-10-09T09:09:53+00:00",
+      "finished_at": "2026-10-09T09:10:02+00:00",
+      "elapsed_s": 8.939043499998661,
+      "detail": "67/91 pairs aligned; 6213 RANSAC inliers",
+      "error": null,
+      "unsupported_reason": null,
+      "counters": {
+        "pairs_attempted": 91,
+        "pairs_ok": 67,
+        "pairs_failed": 24,
+        "status_counts": {
+          "ok": 67,
+          "insufficient_matches": 19,
+          "rejected_by_ransac": 5
+        },
+        "total_ratio_filtered_matches": 8366,
+        "total_inliers": 6213,
+        "mean_inlier_ratio": 0.6961930399438931,
+        "mean_reprojection_error_px": 1.2213349336953736,
+        "images_decoded_failed": 0,
+        "matching_megapixels": 0.6,
+        "matching_scale": 0.2582,
+        "matching_copy_size": [
+          1033,
+          581
+        ],
+        "feature_detector": "orb",
+        "matching_seconds": 6.89407299999948
+      },
+      "rss_mb_at_end": 283.359375
+    },
+    {
+      "name": "align",
+      "index": 4,
+      "status": "done",
+      "started_at": "2026-10-09T09:10:02+00:00",
+      "finished_at": "2026-10-09T09:10:14+00:00",
+      "elapsed_s": 12.21511240000109,
+      "detail": "residual 0.27 m; GPS consistency 1.66 m",
+      "error": null,
+      "unsupported_reason": null,
+      "counters": {
+        "heading_convention": "yaw_ignored",
+        "heading_offset_deg": 42.0,
+        "constraints": 67,
+        "correspondences": 1511,
+        "residual_rmse_px": 11.954298754159135,
+        "residual_rmse_m": 0.26764467695994115,
+        "gps_placement_error_mean_m": 1.6610297604422721,
+        "canvas_px": [
+          7743,
+          7748
+        ],
+        "output_gsd_m": 0.022388990141878656,
+        "homography_pairs_ok": 31
+      },
+      "rss_mb_at_end": 284.54296875
+    },
+    {
+      "name": "compose_tiles",
+      "index": 5,
+      "status": "done",
+      "started_at": "2026-10-09T09:10:14+00:00",
+      "finished_at": "2026-10-09T09:11:49+00:00",
+      "elapsed_s": 94.96568649999972,
+      "detail": "13/16 tile(s) written; first tile at 1.47s",
+      "error": null,
+      "unsupported_reason": null,
+      "counters": {
+        "tiles_total": 16,
+        "tiles_written": 13,
+        "frames_composed": 16,
+        "frames_skipped": 0,
+        "frames_failed": 0,
+        "decodes": 110,
+        "peak_cache_entries": 2,
+        "time_to_first_tile_s": 1.4708328999986406,
+        "compose_seconds": 93.6653931999972,
+        "canvas_megapixels": 59.992764,
+        "errors": [],
+        "tiles_covered": 13,
+        "preview": {
+          "produced": true,
+          "path": "D:\\Project_1\\edge-ortho\\outputs\\20261009-090953-1fb64d\\preview.png",
+          "bytes": 2820642,
+          "width": 1799,
+          "height": 1800,
+          "scale": 0.2323180175529169,
+          "buffer_mb": 49.4110107421875
+        },
+        "exposure_gains": {
+          "applied": true,
+          "frames": 18,
+          "range": [
+            0.9404761904761905,
+            1.1074766355140186
+          ]
+        },
+        "raster": {
+          "path": "D:\\Project_1\\edge-ortho\\outputs\\20261009-090953-1fb64d\\orthomosaic.tif",
+          "bytes": 156879287,
+          "width": 7743,
+          "height": 7748,
+          "bands": 4,
+          "crs": "EPSG:32615",
+          "nodata": 0.0,
+          "messages": [
+            "Band 4 is a composited alpha mask; nodata=0 marks pixels no frame covered."
+          ],
+          "validation": {
+            "readable": true,
+            "checked": [
+              "open",
+              "read_window"
+            ],
+            "driver": "GTiff",
+            "count": 4,
+            "dtype": "uint8",
+            "is_tiled": true,
+            "block_shapes": [
+              [
+                512,
+                512
+              ],
+              [
+                512,
+                512
+              ],
+              [
+                512,
+                512
+              ],
+              [
+                512,
+                512
+              ]
+            ],
+            "overviews": [],
+            "centre_sample_nonzero": true,
+            "crs_present": true,
+            "transform": [
+              0.022388990141878656,
+              0.0,
+              576618.5220430588,
+              0.0,
+              -0.022388990141878656,
+              5188257.601366675
+            ],
+            "transform_is_affine_northup": true,
+            "pixel_size": [
+              0.022388990141878656,
+              0.022388990141878656
+            ],
+            "bounds": [
+              576618.5220430588,
+              5188084.1314710565,
+              576791.8799937273,
+              5188257.601366675
+            ],
+            "bounds_wgs84": [
+              -91.99515790508295,
+              46.84186860576982,
+              -91.99285552584912,
+              46.84344940280312
+            ]
+          }
+        }
+      },
+      "rss_mb_at_end": 289.2890625
+    },
+    {
+      "name": "georeference",
+      "index": 6,
+      "status": "done",
+      "started_at": "2026-10-09T09:11:49+00:00",
+      "finished_at": "2026-10-09T09:11:56+00:00",
+      "elapsed_s": 6.638842000000295,
+      "detail": "georeferenced_orthomosaic: 7743x7748 px at 2.24 cm/px",
+      "error": null,
+      "unsupported_reason": null,
+      "counters": {
+        "kind": "georeferenced_orthomosaic",
+        "crs": "EPSG:32615",
+        "bounds": [
+          576618.5220430588,
+          5188084.1314710565,
+          576791.8799937273,
+          5188257.601366675
+        ],
+        "pixel_size_m": 0.022388990141878656,
+        "cog": true,
+        "validation_readable": true
+      },
+      "rss_mb_at_end": 281.6640625
+    },
+    {
+      "name": "export",
+      "index": 7,
+      "status": "done",
+      "started_at": "2026-10-09T09:11:56+00:00",
+      "finished_at": "2026-10-09T09:12:08+00:00",
+      "elapsed_s": null,
+      "detail": "GeoTIFF 149.6 MB, COG 9.8 MB, 24 XYZ tiles, report.json, metrics.csv",
+      "error": null,
+      "unsupported_reason": null,
+      "counters": {
+        "geotiff": true,
+        "geotiff_bytes": 156879287,
+        "cog": true,
+        "cog_bytes": 10267046,
+        "tiles": true,
+        "tile_count": 24,
+        "tiles_zoom": [
+          16,
+          19
+        ],
+        "report_json": true,
+        "metrics_csv": true,
+        "frames_csv": true,
+        "tooling": {
+          "rio_cogeo_cli": true,
+          "cog_driver": true,
+          "gdal2tiles": false
+        }
+      },
+      "rss_mb_at_end": 280.7734375
+    }
+  ],
+  "metrics": {
+    "run_id": "20261009-090953-1fb64d",
+    "profile": "pi-class",
+    "stage_metrics": [
+      {
+        "name": "ingest",
+        "index": 0,
+        "status": "done",
+        "started_at": "2026-10-09T09:09:53+00:00",
+        "finished_at": "2026-10-09T09:09:53+00:00",
+        "elapsed_s": 0.024110799997288268,
+        "detail": "18 candidate file(s) discovered",
+        "error": null,
+        "unsupported_reason": null,
+        "counters": {
+          "files_discovered": 18,
+          "unsupported_skipped": 0,
+          "input_bytes": 64898696
+        },
+        "rss_mb_at_end": 277.2421875
+      },
+      {
+        "name": "validate_gps",
+        "index": 1,
+        "status": "done",
+        "started_at": "2026-10-09T09:09:53+00:00",
+        "finished_at": "2026-10-09T09:09:53+00:00",
+        "elapsed_s": 0.0031319999980041757,
+        "detail": "18 accepted, 0 rejected; CRS EPSG:32615 - WGS 84 / UTM zone 15N",
+        "error": null,
+        "unsupported_reason": null,
+        "counters": {
+          "accepted": 18,
+          "rejected": 0,
+          "rejected_by_reason": {},
+          "crs": "EPSG:32615 - WGS 84 / UTM zone 15N",
+          "gsd_m": 0.018045000000000002,
+          "gsd_source": "35mm_equiv",
+          "gps_available": true
+        },
+        "rss_mb_at_end": 277.26171875
+      },
+      {
+        "name": "plan_neighbours",
+        "index": 2,
+        "status": "done",
+        "started_at": "2026-10-09T09:09:53+00:00",
+        "finished_at": "2026-10-09T09:09:53+00:00",
+        "elapsed_s": 0.006715699997585034,
+        "detail": "91 candidate pair(s) from 153 possible; 1.7x fewer",
+        "error": null,
+        "unsupported_reason": null,
+        "counters": {
+          "candidate_pairs": 91,
+          "all_pairs_possible": 153,
+          "reduction_factor": 1.6813186813186813,
+          "radius_m": 70.39321021148919,
+          "selection_method": "gps_kdtree",
+          "pairs_below_overlap": 104
+        },
+        "rss_mb_at_end": 277.265625
+      },
+      {
+        "name": "match_features",
+        "index": 3,
+        "status": "done",
+        "started_at": "2026-10-09T09:09:53+00:00",
+        "finished_at": "2026-10-09T09:10:02+00:00",
+        "elapsed_s": 8.939043499998661,
+        "detail": "67/91 pairs aligned; 6213 RANSAC inliers",
+        "error": null,
+        "unsupported_reason": null,
+        "counters": {
+          "pairs_attempted": 91,
+          "pairs_ok": 67,
+          "pairs_failed": 24,
+          "status_counts": {
+            "ok": 67,
+            "insufficient_matches": 19,
+            "rejected_by_ransac": 5
+          },
+          "total_ratio_filtered_matches": 8366,
+          "total_inliers": 6213,
+          "mean_inlier_ratio": 0.6961930399438931,
+          "mean_reprojection_error_px": 1.2213349336953736,
+          "images_decoded_failed": 0,
+          "matching_megapixels": 0.6,
+          "matching_scale": 0.2582,
+          "matching_copy_size": [
+            1033,
+            581
+          ],
+          "feature_detector": "orb",
+          "matching_seconds": 6.89407299999948
+        },
+        "rss_mb_at_end": 283.359375
+      },
+      {
+        "name": "align",
+        "index": 4,
+        "status": "done",
+        "started_at": "2026-10-09T09:10:02+00:00",
+        "finished_at": "2026-10-09T09:10:14+00:00",
+        "elapsed_s": 12.21511240000109,
+        "detail": "residual 0.27 m; GPS consistency 1.66 m",
+        "error": null,
+        "unsupported_reason": null,
+        "counters": {
+          "heading_convention": "yaw_ignored",
+          "heading_offset_deg": 42.0,
+          "constraints": 67,
+          "correspondences": 1511,
+          "residual_rmse_px": 11.954298754159135,
+          "residual_rmse_m": 0.26764467695994115,
+          "gps_placement_error_mean_m": 1.6610297604422721,
+          "canvas_px": [
+            7743,
+            7748
+          ],
+          "output_gsd_m": 0.022388990141878656,
+          "homography_pairs_ok": 31
+        },
+        "rss_mb_at_end": 284.54296875
+      },
+      {
+        "name": "compose_tiles",
+        "index": 5,
+        "status": "done",
+        "started_at": "2026-10-09T09:10:14+00:00",
+        "finished_at": "2026-10-09T09:11:49+00:00",
+        "elapsed_s": 94.96568649999972,
+        "detail": "13/16 tile(s) written; first tile at 1.47s",
+        "error": null,
+        "unsupported_reason": null,
+        "counters": {
+          "tiles_total": 16,
+          "tiles_written": 13,
+          "frames_composed": 16,
+          "frames_skipped": 0,
+          "frames_failed": 0,
+          "decodes": 110,
+          "peak_cache_entries": 2,
+          "time_to_first_tile_s": 1.4708328999986406,
+          "compose_seconds": 93.6653931999972,
+          "canvas_megapixels": 59.992764,
+          "errors": [],
+          "tiles_covered": 13,
+          "preview": {
+            "produced": true,
+            "path": "D:\\Project_1\\edge-ortho\\outputs\\20261009-090953-1fb64d\\preview.png",
+            "bytes": 2820642,
+            "width": 1799,
+            "height": 1800,
+            "scale": 0.2323180175529169,
+            "buffer_mb": 49.4110107421875
+          },
+          "exposure_gains": {
+            "applied": true,
+            "frames": 18,
+            "range": [
+              0.9404761904761905,
+              1.1074766355140186
+            ]
+          },
+          "raster": {
+            "path": "D:\\Project_1\\edge-ortho\\outputs\\20261009-090953-1fb64d\\orthomosaic.tif",
+            "bytes": 156879287,
+            "width": 7743,
+            "height": 7748,
+            "bands": 4,
+            "crs": "EPSG:32615",
+            "nodata": 0.0,
+            "messages": [
+              "Band 4 is a composited alpha mask; nodata=0 marks pixels no frame covered."
+            ],
+            "validation": {
+              "readable": true,
+              "checked": [
+                "open",
+                "read_window"
+              ],
+              "driver": "GTiff",
+              "count": 4,
+              "dtype": "uint8",
+              "is_tiled": true,
+              "block_shapes": [
+                [
+                  512,
+                  512
+                ],
+                [
+                  512,
+                  512
+                ],
+                [
+                  512,
+                  512
+                ],
+                [
+                  512,
+                  512
+                ]
+              ],
+              "overviews": [],
+              "centre_sample_nonzero": true,
+              "crs_present": true,
+              "transform": [
+                0.022388990141878656,
+                0.0,
+                576618.5220430588,
+                0.0,
+                -0.022388990141878656,
+                5188257.601366675
+              ],
+              "transform_is_affine_northup": true,
+              "pixel_size": [
+                0.022388990141878656,
+                0.022388990141878656
+              ],
+              "bounds": [
+                576618.5220430588,
+                5188084.1314710565,
+                576791.8799937273,
+                5188257.601366675
+              ],
+              "bounds_wgs84": [
+                -91.99515790508295,
+                46.84186860576982,
+                -91.99285552584912,
+                46.84344940280312
+              ]
+            }
+          }
+        },
+        "rss_mb_at_end": 289.2890625
+      },
+      {
+        "name": "georeference",
+        "index": 6,
+        "status": "done",
+        "started_at": "2026-10-09T09:11:49+00:00",
+        "finished_at": "2026-10-09T09:11:56+00:00",
+        "elapsed_s": 6.638842000000295,
+        "detail": "georeferenced_orthomosaic: 7743x7748 px at 2.24 cm/px",
+        "error": null,
+        "unsupported_reason": null,
+        "counters": {
+          "kind": "georeferenced_orthomosaic",
+          "crs": "EPSG:32615",
+          "bounds": [
+            576618.5220430588,
+            5188084.1314710565,
+            576791.8799937273,
+            5188257.601366675
+          ],
+          "pixel_size_m": 0.022388990141878656,
+          "cog": true,
+          "validation_readable": true
+        },
+        "rss_mb_at_end": 281.6640625
+      },
+      {
+        "name": "export",
+        "index": 7,
+        "status": "done",
+        "started_at": "2026-10-09T09:11:56+00:00",
+        "finished_at": "2026-10-09T09:12:08+00:00",
+        "elapsed_s": null,
+        "detail": "GeoTIFF 149.6 MB, COG 9.8 MB, 24 XYZ tiles, report.json, metrics.csv",
+        "error": null,
+        "unsupported_reason": null,
+        "counters": {
+          "geotiff": true,
+          "geotiff_bytes": 156879287,
+          "cog": true,
+          "cog_bytes": 10267046,
+          "tiles": true,
+          "tile_count": 24,
+          "tiles_zoom": [
+            16,
+            19
+          ],
+          "report_json": true,
+          "metrics_csv": true,
+          "frames_csv": true,
+          "tooling": {
+            "rio_cogeo_cli": true,
+            "cog_driver": true,
+            "gdal2tiles": false
+          }
+        },
+        "rss_mb_at_end": 280.7734375
+      }
+    ],
+    "wall_clock_s": 134.7978335000007,
+    "time_to_first_tile_s": 1.4708328999986406,
+    "peak_rss_mb": 1073.5625,
+    "baseline_rss_mb": 277.19921875,
+    "peak_rss_delta_mb": 796.36328125,
+    "avg_cpu_percent": 30.206898029134532,
+    "peak_cpu_percent": 108.375,
+    "cpu_cores_effective": 4,
+    "disk_read_bytes": 750112768,
+    "disk_write_bytes": 365420544,
+    "frames_total": 18,
+    "frames_accepted": 18,
+    "frames_rejected": 0,
+    "frames_failed": 0,
+    "frames_composed": 16,
+    "throughput_fps": 0.13353330341173403,
+    "feature_detector": "orb",
+    "alignment_model": "both",
+    "matching_megapixels": 0.6,
+    "tile_size": 2048,
+    "output_crs": "EPSG:32615",
+    "output_kind": "georeferenced_orthomosaic",
+    "input_bytes": 64898696,
+    "output_bytes": 168119859,
+    "reduction_factor": 0.3860263527820351,
+    "pairs_candidates": 91,
+    "pairs_matched": 67,
+    "pairs_failed": 24,
+    "total_matches": 8366,
+    "total_inliers": 6213,
+    "mean_inlier_ratio": 0.6961930399438931,
+    "mean_reprojection_error_px": 1.2213349336953736,
+    "mean_gps_placement_error_m": 1.6610297604422721,
+    "profile_limit_cores": 4,
+    "profile_limit_ram_mb": 4096,
+    "profile_enforcement": {
+      "profile": "pi-class",
+      "cpu_affinity_applied": true,
+      "cpu_affinity_requested": 4,
+      "ram_ceiling_enforced": true,
+      "ram_limit_mb": 4096,
+      "notes": [
+        "RAM limit is a soft ceiling: the run aborts if process RSS exceeds it. It does not emulate physical Raspberry Pi or Jetson memory bandwidth."
+      ],
+      "cpu_affinity_actual": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "bandwidth": {
+      "formula": "transfer_seconds = bytes * 8 / bits_per_second",
+      "input_bytes": 64898696,
+      "output_bytes": 168119859,
+      "reduction_factor": 0.3860263527820351,
+      "scenarios": {
+        "1": {
+          "mbps": 1,
+          "input_seconds": 519.189568,
+          "input_human": "8m 39s",
+          "output_seconds": 1344.958872,
+          "output_human": "22m 25s",
+          "saved_seconds": -825.7693039999999,
+          "saved_human": "-825769 ms"
+        },
+        "5": {
+          "mbps": 5,
+          "input_seconds": 103.8379136,
+          "input_human": "1m 44s",
+          "output_seconds": 268.9917744,
+          "output_human": "4m 29s",
+          "saved_seconds": -165.15386080000002,
+          "saved_human": "-165154 ms"
+        },
+        "20": {
+          "mbps": 20,
+          "input_seconds": 25.9594784,
+          "input_human": "26.0 s",
+          "output_seconds": 67.2479436,
+          "output_human": "1m 7s",
+          "saved_seconds": -41.288465200000005,
+          "saved_human": "-41288 ms"
+        }
+      }
+    },
+    "measurements_unavailable": [],
+    "notes": [
+      "pi-class: CPU affinity applied; RAM ceiling 4096 MB enforced as a soft abort limit (peak seen 596 MB). This is a configured constraint, not a physical device measurement.",
+      "Peak process RSS 1074 MB against a 277 MB baseline, sampled every 0.10s (1167 samples)."
+    ]
+  },
+  "output": {
+    "produced": true,
+    "kind": "georeferenced_orthomosaic",
+    "crs": "EPSG:32615",
+    "crs_name": "EPSG:32615 - WGS 84 / UTM zone 15N",
+    "transform": [
+      0.022388990141878656,
+      0.0,
+      576618.5220430588,
+      0.0,
+      -0.022388990141878656,
+      5188257.601366675
+    ],
+    "bounds": [
+      576618.5220430588,
+      5188084.1314710565,
+      576791.8799937273,
+      5188257.601366675
+    ],
+    "bounds_wgs84": [
+      -91.99515790508295,
+      46.84186860576982,
+      -91.99285552584912,
+      46.84344940280312
+    ],
+    "width": 7743,
+    "height": 7748,
+    "bands": 4,
+    "gsd_m": 0.022388990141878656,
+    "pixel_resolution_m": 0.022388990141878656,
+    "nodata": 0.0,
+    "alpha_mask": true,
+    "geotiff_path": "D:\\Project_1\\edge-ortho\\outputs\\20261009-090953-1fb64d\\orthomosaic.tif",
+    "geotiff_bytes": 156879287,
+    "cog_path": "D:\\Project_1\\edge-ortho\\outputs\\20261009-090953-1fb64d\\orthomosaic_cog.tif",
+    "cog_bytes": 10267046,
+    "cog_driver": "GDAL COG driver (jpeg_mask)",
+    "cog_messages": [
+      "rio cogeo exited 2: Usage: rio.EXE [OPTIONS] COMMAND [ARGS]...\nTry 'rio.EXE --help' for help.\n\nError: No such command 'cogeo'.",
+      "created with GDAL's COG driver (jpeg_mask), reopened successfully; internal mask present: True"
+    ],
+    "cog_validation": {
+      "readable": true,
+      "checked": [
+        "open",
+        "read_window"
+      ],
+      "driver": "GTiff",
+      "count": 3,
+      "dtype": "uint8",
+      "is_tiled": true,
+      "block_shapes": [
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ]
+      ],
+      "overviews": [
+        2,
+        4,
+        8,
+        16
+      ],
+      "centre_sample_nonzero": true,
+      "crs_present": true,
+      "transform": [
+        0.022388990141878656,
+        0.0,
+        576618.5220430588,
+        0.0,
+        -0.022388990141878656,
+        5188257.601366675
+      ],
+      "transform_is_affine_northup": true,
+      "pixel_size": [
+        0.022388990141878656,
+        0.022388990141878656
+      ],
+      "bounds": [
+        576618.5220430588,
+        5188084.1314710565,
+        576791.8799937273,
+        5188257.601366675
+      ],
+      "bounds_wgs84": [
+        -91.99515790508295,
+        46.84186860576982,
+        -91.99285552584912,
+        46.84344940280312
+      ]
+    },
+    "cog_validation_failed": false,
+    "tiles_dir": "D:\\Project_1\\edge-ortho\\outputs\\20261009-090953-1fb64d\\tiles",
+    "tile_count": 24,
+    "min_zoom": 16,
+    "max_zoom": 19,
+    "tiles_produced": true,
+    "tiles_messages": [],
+    "preview_png": "D:\\Project_1\\edge-ortho\\outputs\\20261009-090953-1fb64d\\preview.png",
+    "georeferencing_basis": "GPS centres define the canvas extent; pixel size comes from the EXIF-derived GSD estimate; per-frame rotation and offsets are refined from feature matches.",
+    "validation": {
+      "readable": true,
+      "checked": [
+        "open",
+        "read_window"
+      ],
+      "driver": "GTiff",
+      "count": 4,
+      "dtype": "uint8",
+      "is_tiled": true,
+      "block_shapes": [
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ]
+      ],
+      "overviews": [],
+      "centre_sample_nonzero": true,
+      "crs_present": true,
+      "transform": [
+        0.022388990141878656,
+        0.0,
+        576618.5220430588,
+        0.0,
+        -0.022388990141878656,
+        5188257.601366675
+      ],
+      "transform_is_affine_northup": true,
+      "pixel_size": [
+        0.022388990141878656,
+        0.022388990141878656
+      ],
+      "bounds": [
+        576618.5220430588,
+        5188084.1314710565,
+        576791.8799937273,
+        5188257.601366675
+      ],
+      "bounds_wgs84": [
+        -91.99515790508295,
+        46.84186860576982,
+        -91.99285552584912,
+        46.84344940280312
+      ]
+    },
+    "messages": [
+      "Band 4 is a composited alpha mask; nodata=0 marks pixels no frame covered.",
+      "rio cogeo exited 2: Usage: rio.EXE [OPTIONS] COMMAND [ARGS]...\nTry 'rio.EXE --help' for help.\n\nError: No such command 'cogeo'.",
+      "created with GDAL's COG driver (jpeg_mask), reopened successfully; internal mask present: True"
+    ]
+  },
+  "messages": [
+    "candidate radius 70.4 m = 0.85 x footprint_diagonal (82.8 m)",
+    "estimated ground overlap: min 17%, median 40%, max 67%",
+    "Camera-heading sign and constant offset chosen by sweeping both against the validated pairwise correspondences and keeping the lowest seed RMSE. The offset absorbs a mounting or firmware reporting difference; it is an inferred quantity, not a measured gimbal angle.",
+    "output reduced to 7743x7748 px (60.0 MP) at 2.24 cm/px to respect the 60 MP cap; native estimate is 1.80 cm/px"
+  ],
+  "limitations": [
+    "Constrained profiles emulate CPU and RAM limits on this host. They do not predict the runtime or memory of a physical Raspberry Pi or Jetson device.",
+    "GPS placement error is measured against the camera's own EXIF/XMP tags, which are not an independent reference.",
+    "No 3D products: no point cloud, DSM or mesh. EdgeOrtho deliberately stops at a 2D map.",
+    "Not survey grade. No ground control points were used, so no accuracy claim beyond self-consistency against the camera's own GPS tags is made.",
+    "Targets mostly flat, nadir RGB drone surveys. Strong terrain relief or large parallax breaks the 2D flat-ground assumption; this is not terrain-aware orthorectification."
+  ],
+  "alignment": {
+    "heading_convention": "yaw_ignored",
+    "heading_offset_deg": 42.0,
+    "constraints": 67,
+    "correspondences": 1511,
+    "residual_rmse_px": 11.954298754159135,
+    "residual_rmse_m": 0.26764467695994115,
+    "gps_placement_error_mean_m": 1.6610297604422721,
+    "canvas_px": [
+      7743,
+      7748
+    ],
+    "output_gsd_m": 0.022388990141878656,
+    "homography_pairs_ok": 31
+  },
+  "alignment_comparison": {
+    "available": true,
+    "similarity": {
+      "frames": 18,
+      "mean_gps_error_m": 1.6610297604422721,
+      "median_gps_error_m": 1.7573028431718085,
+      "max_gps_error_m": 2.5878871283683043
+    },
+    "homography_chain": {
+      "frames_reachable": 15,
+      "frames_total": 18,
+      "coverage": 0.8333333333333334,
+      "mean_gps_error_m": 3.0797047250427094,
+      "median_gps_error_m": 1.9024520659471367,
+      "max_gps_error_m": 7.861850193316599
+    },
+    "mean_placement_disagreement_m": 2.3539063599228593,
+    "max_placement_disagreement_m": 7.115383812099577,
+    "note": "Homography chaining places each frame through the seed; errors accumulate with hop count, so a lower similarity error here is expected rather than a defect.",
+    "homography_pairs_ok": 31,
+    "homography_pairs_attempted": 91,
+    "homography_status_counts": {
+      "rejected_by_ransac": 40,
+      "insufficient_matches": 19,
+      "ok": 31,
+      "degenerate_transform": 1
+    },
+    "selected_composition_model": "affine (similarity on the UTM canvas)",
+    "selection_rationale": "Composition always uses the global similarity solve because it is the model validated by the least-squares step. The homography chain is measured here for comparison only, so its numbers are evidence rather than the composite geometry."
+  },
+  "canvas": {
+    "width": 7743,
+    "height": 7748,
+    "megapixels": 59.992764,
+    "gsd_m": 0.022388990141878656,
+    "native_gsd_m": 0.018045000000000002,
+    "origin_e": 576618.5220430588,
+    "origin_n": 5188257.601366675,
+    "crs_epsg": 32615,
+    "crs_name": "EPSG:32615 - WGS 84 / UTM zone 15N",
+    "extent_m": {
+      "min_e": 576618.5220430588,
+      "max_e": 576791.8799702092,
+      "min_n": 5188084.138998014,
+      "max_n": 5188257.601366675,
+      "width_m": 173.35792715044226,
+      "height_m": 173.46236866153777
+    },
+    "output_capped": true,
+    "cap_message": "output reduced to 7743x7748 px (60.0 MP) at 2.24 cm/px to respect the 60 MP cap; native estimate is 1.80 cm/px",
+    "georeferenced": true,
+    "basis": "GPS centres define the canvas extent; pixel size comes from the EXIF-derived GSD estimate; per-frame rotation and offsets are refined from feature matches."
+  }
+}
