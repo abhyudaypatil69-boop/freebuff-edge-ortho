@@ -184,10 +184,21 @@ def inspect_source(payload: dict | None = None) -> dict:
 
     import time as _time
     start = _time.perf_counter()
-    found = discover_images(p)
-    if found.image_count == 0:
-        raise HTTPException(status_code=400, detail="no supported image files found at the source")
-    result = ingest(p)
+    try:
+        found = discover_images(p)
+        if found.image_count == 0:
+            raise HTTPException(status_code=400, detail="no supported image files found at the source")
+        result = ingest(p)
+    except HTTPException:
+        raise
+    except Exception as exc:
+        raise HTTPException(
+            status_code=422,
+            detail=(
+                f"could not inspect the image folder ({type(exc).__name__}: {exc}). "
+                "Confirm that the sample images are readable and that the backend dependencies are installed."
+            ),
+        ) from exc
     elapsed = _time.perf_counter() - start
 
     return {
