@@ -187,7 +187,7 @@ def inspect_source(payload: dict | None = None) -> dict:
     start = _time.perf_counter()
     try:
         found = discover_images(p)
-        if found.image_count == 0:
+        if found.count == 0:
             raise HTTPException(status_code=400, detail="no supported image files found at the source")
         result = ingest(p)
     except HTTPException:
