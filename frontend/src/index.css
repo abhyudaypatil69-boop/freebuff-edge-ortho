@@ -128,6 +128,11 @@
   font-size: 12px;
 }
 
+/* The default map product is a photograph-like raster, not pixel art. */
+.leaflet-image-layer.edgeortho-image-overlay {
+  image-rendering: smooth;
+}
+
 .leaflet-control-attribution {
   background: rgba(251, 250, 247, 0.86) !important;
   color: theme("colors.stone.600");

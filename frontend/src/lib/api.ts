@@ -351,6 +351,20 @@ export interface PairRow {
   error?: string | null;
 }
 
+export interface PrecomputedDataset {
+  key: string;
+  label: string;
+  source: string;
+  license: string;
+  metadata_run_id: string;
+  frame_count: number;
+  pair_count: number;
+  matched_pair_count: number;
+  frames: { frame_id: string; filename: string; accepted: boolean; width: number | null; height: number | null }[];
+  pairs: PairRow[];
+  output: Partial<OutputMetadata>;
+}
+
 const BASE = "/api";
 
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
@@ -477,6 +491,8 @@ export const api = {
       `/samples/${key}/fetch`,
       { method: "POST" },
     ),
+
+  precomputedBrighton: () => request<PrecomputedDataset>("/precomputed/brighton_beach"),
 
   createRun: (payload: {
     source: string;

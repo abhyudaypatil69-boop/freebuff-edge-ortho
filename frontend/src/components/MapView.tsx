@@ -51,11 +51,12 @@ export function MapView({
     basemap?: TileLayer;
   }>({});
   const [visible, setVisible] = useState({
-    footprint: true,
-    flightPath: true,
+    footprint: false,
+    flightPath: false,
     output: true,
     basemap: false,
   });
+  const [outputMode, setOutputMode] = useState<"image" | "tiles">("image");
   const [ready, setReady] = useState(false);
 
   /* ------------------------------------------------------------- init map */
@@ -187,7 +188,7 @@ export function MapView({
     });
     if (!visible.output) return;
 
-    if (layers.tileUrlTemplate) {
+    if (outputMode === "tiles" && layers.tileUrlTemplate) {
       const min = layers.tileMinZoom ?? 0;
       const max = layers.tileMaxZoom ?? 22;
       const tileLayer = L.tileLayer(layers.tileUrlTemplate, {
@@ -212,10 +213,12 @@ export function MapView({
         pane: "outputPane",
         attribution: "EdgeOrtho mosaic preview (generated locally)",
         interactive: false,
+        alt: "Source-faithful generated mosaic image",
+        className: "edgeortho-image-overlay",
       });
       groupsRef.current.preview = overlay.addTo(map);
     }
-  }, [layers.tileUrlTemplate, layers.preview, layers.previewBounds, layers.tileMinZoom, layers.tileMaxZoom, visible.output, ready]);
+  }, [layers.tileUrlTemplate, layers.preview, layers.previewBounds, layers.tileMinZoom, layers.tileMaxZoom, visible.output, outputMode, ready]);
 
   /* ------------------------------------------------------------- fit extent */
   const fitExtent = useMemo(() => {
@@ -245,8 +248,6 @@ export function MapView({
     return () => window.clearTimeout(id);
   }, [ready, fitExtent, layers.footprint, layers.preview, layers.tileUrlTemplate, layers.previewBounds]);
 
-  const hasOutput = Boolean(layers.tileUrlTemplate || (layers.preview && layers.previewBounds));
-
   return (
     <div className={cx("relative h-full w-full overflow-hidden", className)}>
       <div ref={containerRef} className="h-full w-full" role="application" aria-label="Mosaic map" />
@@ -259,17 +260,26 @@ export function MapView({
           </div>
           <div className="p-1.5">
             <LayerRow
-              label="Mosaic output"
+              label="Source-faithful image"
               detail={
-                layers.tileUrlTemplate
-                  ? `XYZ tiles z${layers.tileMinZoom}–z${layers.tileMaxZoom}`
-                  : layers.preview
-                    ? "single preview raster"
-                    : "not produced"
+                layers.preview ? "generated PNG · default view" : layers.tileUrlTemplate ? "preview unavailable" : "not produced"
               }
-              active={visible.output}
-              disabled={!hasOutput}
-              onToggle={() => setVisible((v) => ({ ...v, output: !v.output }))}
+              active={visible.output && outputMode === "image"}
+              disabled={!layers.preview}
+              onToggle={() => {
+                setOutputMode("image");
+                setVisible((v) => ({ ...v, output: true }));
+              }}
+            />
+            <LayerRow
+              label="Map tile diagnostics"
+              detail={layers.tileUrlTemplate ? `XYZ z${layers.tileMinZoom}–z${layers.tileMaxZoom}` : "not produced"}
+              active={visible.output && outputMode === "tiles"}
+              disabled={!layers.tileUrlTemplate}
+              onToggle={() => {
+                setOutputMode("tiles");
+                setVisible((v) => ({ ...v, output: true }));
+              }}
             />
             <LayerRow
               label="Image footprints"

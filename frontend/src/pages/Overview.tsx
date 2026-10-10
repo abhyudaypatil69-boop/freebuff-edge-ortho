@@ -1,7 +1,8 @@
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
   ArrowRight,
   Cpu,
+  Database,
   FolderPlus,
   HardDrive,
   ImageIcon,
@@ -11,7 +12,7 @@ import {
   Timer,
   TriangleAlert,
 } from "lucide-react";
-import type { RunListItem } from "../lib/api";
+import { api, type PrecomputedDataset, type RunListItem } from "../lib/api";
 import {
   DASH,
   fmtBytes,
@@ -27,6 +28,12 @@ import type { PageProps } from "./shared";
 import { runThumbnail } from "./shared";
 
 export default function Overview({ runs, system, systemError, refreshRuns, onNavigate, selectRun }: PageProps) {
+  const [precomputed, setPrecomputed] = useState<PrecomputedDataset | null>(null);
+
+  useEffect(() => {
+    void api.precomputedBrighton().then(setPrecomputed).catch(() => setPrecomputed(null));
+  }, []);
+
   const finished = useMemo(
     () => runs.filter((r) => r.status === "succeeded" || r.status === "failed"),
     [runs],
@@ -127,6 +134,44 @@ export default function Overview({ runs, system, systemError, refreshRuns, onNav
           </div>
         </div>
       </Panel>
+
+      {precomputed ? (
+        <Panel>
+          <PanelHeader
+            title="Precomputed pair dataset"
+            subtitle="Brighton Beach metadata is loaded from the repository"
+            icon={<Database size={14} />}
+            actions={<Button variant="ghost" onClick={() => onNavigate("new", "samples")}>Use these 18 images</Button>}
+          />
+          <div className="grid gap-4 p-4 lg:grid-cols-[1fr_1.4fr]">
+            <div>
+              <p className="text-xs leading-relaxed text-stone-600">
+                The checked-in solve contains the real frame names and pair statistics. Raw JPGs are not committed;
+                fetch the BSD-licensed source locally before running the final image composition.
+              </p>
+              <div className="mt-3 grid grid-cols-3 gap-2">
+                <Stat label="Images" value={String(precomputed.frame_count)} hint="accepted frames" />
+                <Stat label="Pairs" value={String(precomputed.pair_count)} hint="candidate records" />
+                <Stat label="Aligned" value={String(precomputed.matched_pair_count)} hint="validated transforms" />
+              </div>
+            </div>
+            <div className="rounded-[4px] border border-stone-200 bg-stone-100/70 p-3">
+              <div className="mb-2 flex items-center justify-between text-2xs uppercase tracking-[0.07em] text-stone-500">
+                <span>Loaded pair examples</span>
+                <span>{precomputed.metadata_run_id}</span>
+              </div>
+              <div className="grid gap-1 sm:grid-cols-2">
+                {precomputed.pairs.slice(0, 6).map((pair) => (
+                  <div key={`${pair.source_id}-${pair.target_id}`} className="flex items-center justify-between rounded bg-stone-50 px-2 py-1.5 text-2xs">
+                    <span className="font-mono text-stone-700">{pair.source_id} → {pair.target_id}</span>
+                    <span className={pair.status === "ok" ? "text-forest-700" : "text-stone-500"}>{pair.status ?? "planned"}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </Panel>
+      ) : null}
 
       {systemError ? (
         <Callout

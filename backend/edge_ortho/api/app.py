@@ -16,6 +16,7 @@ Two ingestion routes are supported on purpose:
 from __future__ import annotations
 
 import io
+import csv
 import json
 import os
 import platform
@@ -319,6 +320,58 @@ def fetch_sample_dataset(key: str) -> dict:
             ),
         ) from exc
     return {**manifest, "log": logs}
+
+
+@app.get("/api/precomputed/brighton_beach")
+def precomputed_brighton_beach() -> dict:
+    """Return the checked-in Brighton Beach metadata and pair solve.
+
+    The repository intentionally does not redistribute the raw JPGs. This
+    endpoint exposes the reproducible 18-frame/91-pair metadata that is safe to
+    ship, while the sample fetch route remains the source of the original files.
+    """
+    candidates = sorted(config.META_DIR.glob("*/pairs.json"), reverse=True)
+    if not candidates:
+        raise HTTPException(status_code=404, detail="no precomputed pair dataset is installed")
+    pairs_path = candidates[0]
+    run_dir = pairs_path.parent
+    frames_path = run_dir / "frames.csv"
+    report_path = run_dir / "report.json"
+    try:
+        pairs = json.loads(pairs_path.read_text(encoding="utf-8"))
+        with frames_path.open(newline="", encoding="utf-8") as fh:
+            frames = [
+                {
+                    "frame_id": row.get("frame_id"),
+                    "filename": row.get("filename"),
+                    "accepted": row.get("accepted") == "True",
+                    "width": int(row["width"]) if row.get("width") else None,
+                    "height": int(row["height"]) if row.get("height") else None,
+                }
+                for row in csv.DictReader(fh)
+            ]
+    except (OSError, ValueError, json.JSONDecodeError) as exc:
+        raise HTTPException(status_code=500, detail=f"precomputed pair metadata is invalid: {exc}") from exc
+
+    report = {}
+    if report_path.exists():
+        try:
+            report = json.loads(report_path.read_text(encoding="utf-8"))
+        except (OSError, ValueError, json.JSONDecodeError):
+            report = {}
+    return {
+        "key": "brighton_beach",
+        "label": "Brighton Beach (18 frames)",
+        "source": "https://github.com/pierotofy/drone_dataset_brighton_beach",
+        "license": "BSD 2-Clause (Copyright (c) 2017, Piero Toffanin)",
+        "metadata_run_id": run_dir.name,
+        "frame_count": len(frames),
+        "pair_count": len(pairs),
+        "matched_pair_count": sum(1 for pair in pairs if pair.get("status") == "ok"),
+        "frames": frames,
+        "pairs": pairs[:400],
+        "output": report.get("output", {}),
+    }
 
 
 # ---------------------------------------------------------------------------

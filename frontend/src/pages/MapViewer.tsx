@@ -81,8 +81,11 @@ export default function MapViewer({ runs, runId, activeRunId, onNavigate, select
     return {
       footprint: footprints,
       flightPath: paths,
-      preview: hasTiles ? null : output?.produced && previewBounds ? previewUrl(effectiveId) : null,
-      previewBounds: hasTiles ? null : previewBounds,
+      // Keep the single PNG available even when XYZ tiles exist. It is the
+      // closest browser representation of the composed raster and avoids the
+      // 256px tile grid becoming the visual product by default.
+      preview: output?.produced && previewBounds ? previewUrl(effectiveId) : null,
+      previewBounds,
       tileUrlTemplate: hasTiles ? tileUrl(effectiveId) : null,
       tileMinZoom: hasTiles ? Number(output?.min_zoom ?? 0) : null,
       tileMaxZoom: hasTiles ? Number(output?.max_zoom ?? 18) : null,
@@ -285,9 +288,9 @@ export default function MapViewer({ runs, runId, activeRunId, onNavigate, select
           <PanelHeader title="How to read this map" icon={<Ruler size={14} />} />
           <ul className="space-y-2 px-4 py-3 text-2xs leading-relaxed text-stone-600">
             <li>
-              <strong className="font-semibold text-stone-700">Mosaic output</strong> is the raster EdgeOrtho
-              generated in this run, drawn in Web Mercator. Switch to the preview raster when no XYZ tile set
-              exists.
+              <strong className="font-semibold text-stone-700">Source-faithful image</strong> is the generated
+              PNG preview shown first so the final view keeps the original imagery's colours and proportions.
+              Use the map tiles only for tile-grid/geospatial QA.
             </li>
             <li>
               <strong className="font-semibold text-stone-700">Footprints</strong> are real ground rectangles
