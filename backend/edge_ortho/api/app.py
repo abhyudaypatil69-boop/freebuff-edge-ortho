@@ -34,6 +34,7 @@ from fastapi.responses import FileResponse, JSONResponse, Response, StreamingRes
 from .. import config
 from ..contracts import BANDWIDTH_TEST_MBPS
 from ..geo import raster as geopraster
+from ..ingest.discovery import discover_images
 from ..ingest.validate import ingest
 from ..profiles import PROFILES
 from ..sample import fetch_sample, images_dir, is_installed, list_samples
