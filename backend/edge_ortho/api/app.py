@@ -331,15 +331,20 @@ def precomputed_brighton_beach() -> dict:
     ship, while the sample fetch route remains the source of the original files.
     """
     candidates = sorted(config.META_DIR.glob("*/pairs.json"), reverse=True)
-    if not candidates:
-        raise HTTPException(status_code=404, detail="no precomputed pair dataset is installed")
-    pairs_path = candidates[0]
-    run_dir = pairs_path.parent
-    frames_path = run_dir / "frames.csv"
-    report_path = run_dir / "report.json"
-    try:
-        pairs = json.loads(pairs_path.read_text(encoding="utf-8"))
-        with frames_path.open(newline="", encoding="utf-8") as fh:
+    pairs_path = None
+    frames = []
+    pairs = []
+    for candidate in candidates:
+        frames_path = candidate.parent / "frames.csv"
+        try:
+            candidate_pairs = json.loads(candidate.read_text(encoding="utf-8"))
+            with frames_path.open(newline="", encoding="utf-8") as fh:
+                candidate_frames = list(csv.DictReader(fh))
+        except (OSError, ValueError, json.JSONDecodeError):
+            continue
+        if len(candidate_frames) == 18 and len(candidate_pairs) == 91:
+            pairs_path = candidate
+            pairs = candidate_pairs
             frames = [
                 {
                     "frame_id": row.get("frame_id"),
@@ -348,10 +353,13 @@ def precomputed_brighton_beach() -> dict:
                     "width": int(row["width"]) if row.get("width") else None,
                     "height": int(row["height"]) if row.get("height") else None,
                 }
-                for row in csv.DictReader(fh)
+                for row in candidate_frames
             ]
-    except (OSError, ValueError, json.JSONDecodeError) as exc:
-        raise HTTPException(status_code=500, detail=f"precomputed pair metadata is invalid: {exc}") from exc
+            break
+    if pairs_path is None:
+        raise HTTPException(status_code=404, detail="no precomputed pair dataset is installed")
+    run_dir = pairs_path.parent
+    report_path = run_dir / "report.json"
 
     report = {}
     if report_path.exists():
@@ -746,7 +754,8 @@ def _frames_to_geojson(frames: list[dict], epsg: int | None, record: dict) -> di
     to_wgs = Transformer.from_crs(f"EPSG:{epsg}", "EPSG:4326", always_xy=True) if epsg else None
 
     def conv(x: float, y: float) -> list[float]:
-        return [x, y] if to_wgs is None else [to_wgs.transform(float(x), float(y))]
+        if to_wgs is None:
+            return [x, y]
         lon, lat = to_wgs.transform(float(x), float(y))
         return [lon, lat]
 
